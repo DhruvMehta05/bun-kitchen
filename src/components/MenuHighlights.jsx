@@ -1,7 +1,10 @@
 import React from 'react';
-import heroImg from '../assets/hero.png';
-import burgerImg from '../assets/burger.png';
-import friesImg from '../assets/fries.png';
+import classicImg from '../assets/hero_actual.jpg';
+import spicyImg from '../assets/burger_actual2.jpg';
+import friesImg from '../assets/burger_actual3.jpg';
+import doubleImg from '../assets/double_crunch_new.jpg';
+import comboImg from '../assets/burger_actual1.jpg';
+import nachoImg from '../assets/nacho_burger.jpg';
 
 const MenuHighlights = () => {
   const menuItems = [
@@ -10,14 +13,14 @@ const MenuHighlights = () => {
       name: "The Classic Cheeseburger",
       description: "Our signature beef patty with double American cheese, fresh lettuce, tomato, and house sauce.",
       price: "$12.99",
-      image: heroImg
+      image: classicImg
     },
     {
       id: 2,
       name: "Spicy Crispy Chicken",
       description: "Crispy fried chicken breast, spicy mayo, jalapeños, and crunchy slaw on a toasted bun.",
       price: "$14.50",
-      image: burgerImg
+      image: spicyImg
     },
     {
       id: 3,
@@ -25,6 +28,27 @@ const MenuHighlights = () => {
       description: "Golden crispy fries smothered in melted cheddar cheese, topped with crispy bacon bits and scallions.",
       price: "$8.99",
       image: friesImg
+    },
+    {
+      id: 4,
+      name: "Double Crunch Burger",
+      description: "Two crispy patties stacked with extra cheese, pickles, and our special crunch sauce.",
+      price: "$16.99",
+      image: doubleImg
+    },
+    {
+      id: 5,
+      name: "The Family Combo",
+      description: "A giant burger paired with a generous portion of our signature fries and dipping sauce.",
+      price: "$24.99",
+      image: comboImg
+    },
+    {
+      id: 6,
+      name: "Fiesta Nacho Burger",
+      description: "Crispy patty topped with crunchy nachos, jalapeños, and zesty cheese sauce.",
+      price: "$15.99",
+      image: nachoImg
     }
   ];
 
