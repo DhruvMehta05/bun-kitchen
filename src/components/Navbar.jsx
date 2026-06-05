@@ -6,7 +6,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="container">
         <div className="nav-brand">
-          <img src={logoImg} alt="BUNBAY Logo" style={{ height: '85px' }} />
+          <a href="#home" id="nav-logo-link">
+            <img src={logoImg} alt="BUNBAY Logo" style={{ height: '85px' }} />
+          </a>
         </div>
         <ul className="nav-links">
           <li><a href="#home">Home</a></li>

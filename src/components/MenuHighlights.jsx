@@ -67,12 +67,6 @@ const MenuHighlights = () => {
             alt="BUNBAY full menu — burgers, fries, drinks, combos, meals, and party packs"
             className="menu-poster-img"
           />
-          <div className="large-order-note">
-            <span className="note-icon">📢</span>
-            <p>
-              <strong>Note on Large Orders:</strong> For orders of <strong>20 or more burgers</strong>, please place your order <strong>1 day prior</strong> so we can prepare and deliver them fresh for your celebration!
-            </p>
-          </div>
         </div>
       </div>
     </section>
