@@ -1,0 +1,234 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e4]: Skip to main content
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]
+        - link "GoDaddy" [ref=e11] [cursor=pointer]:
+          - /url: https://venture-redirector.godaddy.com/
+          - figure "GoDaddy" [ref=e12]:
+            - img [ref=e13]
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - generic [ref=e17]: MANAGE
+          - listitem [ref=e18]:
+            - link "Portfolio" [ref=e19] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/portfolio
+              - generic [ref=e24]: Portfolio
+          - listitem [ref=e25]:
+            - link "DNS" [ref=e26] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/dnsmanagement
+              - generic [ref=e31]: DNS
+          - listitem [ref=e32]:
+            - link "Transfers" [ref=e33] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/transfers
+              - generic [ref=e38]: Transfers
+          - listitem [ref=e39]:
+            - button "Services" [ref=e40] [cursor=pointer]:
+              - generic [ref=e45]: Services
+            - list:
+              - listitem [ref=e48]:
+                - link "DNS Hosting" [ref=e49] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dnshosting
+                  - generic [ref=e52]: DNS Hosting
+              - listitem [ref=e53]:
+                - link "Domain Broker" [ref=e54] [cursor=pointer]:
+                  - /url: https://dbs.godaddy.com/
+                  - generic [ref=e57]: Domain Broker
+              - listitem [ref=e58]:
+                - link "Pre-Registration" [ref=e59] [cursor=pointer]:
+                  - /url: https://preregistration.godaddy.com/
+                  - generic [ref=e62]: Pre-Registration
+              - listitem [ref=e63]:
+                - link "Block" [ref=e64] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/blocks
+                  - generic [ref=e67]: Block
+              - listitem [ref=e68]:
+                - link "Negotiations" [ref=e69] [cursor=pointer]:
+                  - /url: https://aftermarket.godaddy.com/negotiations
+                  - generic [ref=e72]: Negotiations
+          - listitem [ref=e73]:
+            - button "Settings" [ref=e74] [cursor=pointer]:
+              - generic [ref=e79]: Settings
+            - list:
+              - listitem [ref=e82]:
+                - link "Delegate Access" [ref=e83] [cursor=pointer]:
+                  - /url: https://sso.godaddy.com/access
+                  - generic [ref=e86]: Delegate Access
+              - listitem [ref=e87]:
+                - link "DNS Templates" [ref=e88] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dns/templates
+                  - generic [ref=e91]: DNS Templates
+              - listitem [ref=e92]:
+                - link "Exported Lists" [ref=e93] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/exported-lists
+                  - generic [ref=e96]: Exported Lists
+          - listitem [ref=e97]:
+            - link "Activity Log" [ref=e98] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/activity/log
+              - generic [ref=e103]: Activity Log
+          - listitem [ref=e104]
+          - listitem [ref=e105]:
+            - generic [ref=e106]: BUY AND SELL
+          - listitem [ref=e107]:
+            - link "Afternic" [ref=e108] [cursor=pointer]:
+              - /url: https://sso.godaddy.com/federate/afternic?path=/dashboard?itc=dcc_portfolio_afternic
+              - generic [ref=e113]: Afternic
+          - listitem [ref=e114]:
+            - link "Auctions" [ref=e115] [cursor=pointer]:
+              - /url: https://auctions.godaddy.com/beta?itc=dcc_portfolio_auctions
+              - generic [ref=e120]: Auctions
+          - listitem [ref=e121]:
+            - link "Domain Parking" [ref=e122] [cursor=pointer]:
+              - /url: https://www.godaddy.com/domain-parking/dashboard?itc=dcc_portfolio_parking
+              - generic [ref=e127]: Domain Parking
+          - listitem [ref=e128]
+          - listitem [ref=e129]:
+            - generic [ref=e130]: LEARN
+          - listitem [ref=e131]:
+            - link "Domain Academy" [ref=e132] [cursor=pointer]:
+              - /url: https://community.godaddy.com/s/domain-academy?itc=dcc_portfolio_domain_academy
+              - generic [ref=e137]: Domain Academy
+      - generic [ref=e138]:
+        - link "Help Center" [ref=e139] [cursor=pointer]:
+          - /url: https://www.godaddy.com/help
+          - generic [ref=e140]: Help Center
+        - generic [ref=e172]:
+          - button "Notifications" [ref=e174] [cursor=pointer]:
+            - generic "Notifications" [ref=e175]:
+              - generic [ref=e179]: "2"
+          - tooltip "Close You have 2 important updates, open now before they expire!" [ref=e180]:
+            - generic [ref=e182]:
+              - button "Close" [ref=e184] [cursor=pointer]
+              - button "You have 2 important updates, open now before they expire!" [ref=e185] [cursor=pointer]
+        - button "App Switcher" [ref=e142] [cursor=pointer]
+        - button "Customer Info" [ref=e144] [cursor=pointer]:
+          - generic [ref=e145]: SS
+        - link "Empty Cart" [ref=e190] [cursor=pointer]:
+          - /url: https://www.godaddy.com/en-in/pricing
+          - generic "Empty Cart" [ref=e191]
+  - main [ref=e147]:
+    - generic [ref=e151]:
+      - heading "DNS Management" [level=1] [ref=e154]
+      - generic [ref=e156]:
+        - heading "bunbay.co.in" [level=2] [ref=e157]
+        - generic [ref=e158]:
+          - button "Domain Settings" [ref=e159] [cursor=pointer]:
+            - generic: Domain Settings
+          - button "Select a different domain" [ref=e160] [cursor=pointer]:
+            - generic: Select a different domain
+      - generic [ref=e193]:
+        - navigation [ref=e194]:
+          - tablist "Navigation" [ref=e196]:
+            - tab "DNS Records" [selected] [ref=e197] [cursor=pointer]
+            - tab "Forwarding" [ref=e198] [cursor=pointer]
+            - tab "Nameservers" [ref=e199] [cursor=pointer]
+            - tab "Premium DNS" [ref=e200] [cursor=pointer]
+            - tab "Hostnames" [ref=e201] [cursor=pointer]
+        - tabpanel "DNS Records" [ref=e202]:
+          - table [ref=e210]:
+            - rowgroup [ref=e211]:
+              - row "Type Click here for more information Name Click here for more information Data Click here for more information TTL Click here for more information Delete Edit" [ref=e212]:
+                - columnheader [ref=e213]
+                - columnheader "Type Click here for more information" [ref=e214]:
+                  - generic [ref=e215]:
+                    - text: Type
+                    - button "Click here for more information" [ref=e218] [cursor=pointer]
+                - columnheader "Name Click here for more information" [ref=e219]:
+                  - generic [ref=e220]:
+                    - text: Name
+                    - button "Click here for more information" [ref=e223] [cursor=pointer]
+                - columnheader "Data Click here for more information" [ref=e224]:
+                  - generic [ref=e225]:
+                    - text: Data
+                    - button "Click here for more information" [ref=e228] [cursor=pointer]
+                - columnheader "TTL Click here for more information" [ref=e229]:
+                  - generic [ref=e230]:
+                    - text: TTL
+                    - button "Click here for more information" [ref=e233] [cursor=pointer]
+                - columnheader "Delete" [ref=e234]:
+                  - generic [ref=e236]: Delete
+                - columnheader "Edit" [ref=e237]:
+                  - generic [ref=e239]: Edit
+            - rowgroup [ref=e240]:
+              - row "a @ WebsiteBuilder Site 1 Hour Delete Edit" [ref=e241]:
+                - cell [ref=e242]:
+                  - checkbox [disabled] [ref=e245]
+                - cell "a" [ref=e246]
+                - cell "@" [ref=e247]
+                - cell "WebsiteBuilder Site" [ref=e248]
+                - cell "1 Hour" [ref=e249]
+                - cell "Delete" [ref=e250]:
+                  - button "Delete" [disabled] [ref=e251]
+                - cell "Edit" [ref=e252]:
+                  - button "Edit" [disabled] [ref=e253]
+              - row "ns @ ns27.domaincontrol.com. 1 Hour Can't delete Can't edit" [ref=e254]:
+                - cell [ref=e255]:
+                  - checkbox [disabled] [ref=e258]
+                - cell "ns" [ref=e259]
+                - cell "@" [ref=e260]
+                - cell "ns27.domaincontrol.com." [ref=e261]
+                - cell "1 Hour" [ref=e262]
+                - cell "Can't delete" [ref=e263]:
+                  - generic [ref=e266]: Can't delete
+                - cell "Can't edit" [ref=e267]:
+                  - generic [ref=e270]: Can't edit
+              - row "ns @ ns28.domaincontrol.com. 1 Hour Can't delete Can't edit" [ref=e271]:
+                - cell [ref=e272]:
+                  - checkbox [disabled] [ref=e275]
+                - cell "ns" [ref=e276]
+                - cell "@" [ref=e277]
+                - cell "ns28.domaincontrol.com." [ref=e278]
+                - cell "1 Hour" [ref=e279]
+                - cell "Can't delete" [ref=e280]:
+                  - generic [ref=e283]: Can't delete
+                - cell "Can't edit" [ref=e284]:
+                  - generic [ref=e287]: Can't edit
+              - row "cname www bunbay.co.in. 1 Hour Delete Edit" [ref=e288]:
+                - cell [ref=e289]:
+                  - checkbox [disabled] [ref=e292]
+                - cell "cname" [ref=e293]
+                - cell "www" [ref=e294]
+                - cell "bunbay.co.in." [ref=e295]
+                - cell "1 Hour" [ref=e296]
+                - cell "Delete" [ref=e297]:
+                  - button "Delete" [disabled] [ref=e298]
+                - cell "Edit" [ref=e299]:
+                  - button "Edit" [disabled] [ref=e300]
+              - row "cname _domainconnect _domainconnect.gd.domaincontrol.com. 1 Hour Delete Edit" [ref=e301]:
+                - cell [ref=e302]:
+                  - checkbox [disabled] [ref=e305]
+                - cell "cname" [ref=e306]
+                - cell "_domainconnect" [ref=e307]
+                - cell "_domainconnect.gd.domaincontrol.com." [ref=e308]
+                - cell "1 Hour" [ref=e309]
+                - cell "Delete" [ref=e310]:
+                  - button "Delete" [disabled] [ref=e311]
+                - cell "Edit" [ref=e312]:
+                  - button "Edit" [disabled] [ref=e313]
+              - 'row "soa @ Primary nameserver: ns27.domaincontrol.com. 1 Hour Delete Edit" [ref=e314]':
+                - cell [ref=e315]:
+                  - checkbox [disabled] [ref=e318]
+                - cell "soa" [ref=e319]
+                - cell "@" [ref=e320]
+                - 'cell "Primary nameserver: ns27.domaincontrol.com." [ref=e321]'
+                - cell "1 Hour" [ref=e322]
+                - cell "Delete" [ref=e323]:
+                  - button "Delete" [disabled] [ref=e324]
+                - cell "Edit" [ref=e325]:
+                  - button "Edit" [disabled] [ref=e326]
+              - row "txt _dmarc v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net; 1 Hour Delete Edit" [ref=e327]:
+                - cell [ref=e328]:
+                  - checkbox [disabled] [ref=e331]
+                - cell "txt" [ref=e332]
+                - cell "_dmarc" [ref=e333]
+                - cell "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;" [ref=e334]
+                - cell "1 Hour" [ref=e335]
+                - cell "Delete" [ref=e336]:
+                  - button "Delete" [disabled] [ref=e337]
+                - cell "Edit" [ref=e338]:
+                  - button "Edit" [disabled] [ref=e339]
+      - status "Your content is loading" [ref=e346]
+  - alert [ref=e167]

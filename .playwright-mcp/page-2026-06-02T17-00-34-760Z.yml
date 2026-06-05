@@ -1,0 +1,254 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e4]: Skip to main content
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]
+        - link "GoDaddy" [ref=e11] [cursor=pointer]:
+          - /url: https://venture-redirector.godaddy.com/
+          - figure "GoDaddy" [ref=e12]:
+            - img [ref=e13]
+        - list [ref=e15]:
+          - listitem [ref=e151]:
+            - generic [ref=e152]: MANAGE
+          - listitem [ref=e16]:
+            - link "Portfolio" [ref=e17] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/portfolio
+              - generic [ref=e22]: Portfolio
+          - listitem [ref=e23]:
+            - link "DNS" [ref=e24] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/dnsmanagement
+              - generic [ref=e29]: DNS
+          - listitem [ref=e30]:
+            - link "Transfers" [ref=e31] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/transfers
+              - generic [ref=e36]: Transfers
+          - listitem [ref=e37]:
+            - button "Services" [ref=e38] [cursor=pointer]:
+              - generic [ref=e43]: Services
+            - list:
+              - listitem [ref=e46]:
+                - link "DNS Hosting" [ref=e47] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dnshosting
+                  - generic [ref=e50]: DNS Hosting
+              - listitem [ref=e51]:
+                - link "Domain Broker" [ref=e52] [cursor=pointer]:
+                  - /url: https://dbs.godaddy.com/
+                  - generic [ref=e55]: Domain Broker
+              - listitem [ref=e153]:
+                - link "Pre-Registration" [ref=e154] [cursor=pointer]:
+                  - /url: https://preregistration.godaddy.com/
+                  - generic [ref=e157]: Pre-Registration
+              - listitem [ref=e61]:
+                - link "Block" [ref=e62] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/blocks
+                  - generic [ref=e65]: Block
+              - listitem [ref=e66]:
+                - link "Negotiations" [ref=e67] [cursor=pointer]:
+                  - /url: https://aftermarket.godaddy.com/negotiations
+                  - generic [ref=e70]: Negotiations
+          - listitem [ref=e100]:
+            - button "Settings" [ref=e101] [cursor=pointer]:
+              - generic [ref=e106]: Settings
+            - list:
+              - listitem [ref=e109]:
+                - link "Delegate Access" [ref=e110] [cursor=pointer]:
+                  - /url: https://sso.godaddy.com/access
+                  - generic [ref=e113]: Delegate Access
+              - listitem [ref=e114]:
+                - link "DNS Templates" [ref=e115] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dns/templates
+                  - generic [ref=e118]: DNS Templates
+              - listitem [ref=e119]:
+                - link "Exported Lists" [ref=e120] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/exported-lists
+                  - generic [ref=e123]: Exported Lists
+          - listitem [ref=e124]:
+            - link "Activity Log" [ref=e125] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/activity/log
+              - generic [ref=e130]: Activity Log
+          - listitem [ref=e158]
+          - listitem [ref=e159]:
+            - generic [ref=e160]: BUY AND SELL
+          - listitem [ref=e161]:
+            - link "Afternic" [ref=e162] [cursor=pointer]:
+              - /url: https://sso.godaddy.com/federate/afternic?path=/dashboard?itc=dcc_portfolio_afternic
+              - generic [ref=e167]: Afternic
+          - listitem [ref=e168]:
+            - link "Auctions" [ref=e169] [cursor=pointer]:
+              - /url: https://auctions.godaddy.com/beta?itc=dcc_portfolio_auctions
+              - generic [ref=e174]: Auctions
+          - listitem [ref=e175]:
+            - link "Domain Parking" [ref=e176] [cursor=pointer]:
+              - /url: https://www.godaddy.com/domain-parking/dashboard?itc=dcc_portfolio_parking
+              - generic [ref=e181]: Domain Parking
+          - listitem [ref=e182]
+          - listitem [ref=e183]:
+            - generic [ref=e184]: LEARN
+          - listitem [ref=e185]:
+            - link "Domain Academy" [ref=e186] [cursor=pointer]:
+              - /url: https://community.godaddy.com/s/domain-academy?itc=dcc_portfolio_domain_academy
+              - generic [ref=e191]: Domain Academy
+      - generic [ref=e131]:
+        - link "Help Center" [ref=e132] [cursor=pointer]:
+          - /url: https://www.godaddy.com/help
+          - generic [ref=e133]: Help Center
+        - button "Notifications" [ref=e198] [cursor=pointer]:
+          - generic "Notifications" [ref=e199]:
+            - generic [ref=e203]: "2"
+        - button "App Switcher" [ref=e135] [cursor=pointer]
+        - button "Customer Info" [ref=e137] [cursor=pointer]:
+          - generic [ref=e138]: SS
+        - link "Empty Cart" [ref=e208] [cursor=pointer]:
+          - /url: https://www.godaddy.com/en-in/pricing
+          - generic "Empty Cart" [ref=e209]
+  - main [ref=e140]:
+    - generic [ref=e211]:
+      - generic [ref=e212]:
+        - button "Back to Domain Portfolio" [ref=e213] [cursor=pointer]:
+          - generic: Domain Portfolio
+        - heading "bunbay.co.in" [level=1] [ref=e216]
+      - alert [ref=e218]:
+        - generic [ref=e221]:
+          - button "Close" [ref=e223] [cursor=pointer]
+          - generic [ref=e225]:
+            - text: Your domain is pending
+            - link "WHOIS verification" [ref=e226] [cursor=pointer]:
+              - /url: https://www.godaddy.com/help/a-5835?plid=1
+              - generic [ref=e227]: WHOIS verification
+            - text: . Some domain actions are unavailable until your domain verification is complete.
+          - group [ref=e228]:
+            - button "Validate" [ref=e230] [cursor=pointer]:
+              - generic: Validate
+      - generic [ref=e231]:
+        - navigation [ref=e232]:
+          - tablist "Navigation" [ref=e234]:
+            - tab "Overview" [selected] [ref=e235] [cursor=pointer]
+            - tab "DNS" [ref=e236] [cursor=pointer]
+            - tab "Products" [ref=e237] [cursor=pointer]
+            - tab "Activity Log" [ref=e238] [cursor=pointer]
+        - tabpanel "Overview" [ref=e239]:
+          - generic [ref=e240]:
+            - alert "Add Organization Name" [ref=e245]:
+              - generic [ref=e248]:
+                - button "Close" [ref=e250] [cursor=pointer]
+                - heading "Add Organization Name" [level=2] [ref=e252]
+                - paragraph [ref=e255]: Missing an organization name in your domain contact info? If you're managing for an organization, adding its name can assert domain ownership and aid in disputes. Make sure it matches official documents for easy recovery. Ready to add it?
+                - group [ref=e256]:
+                  - button "Add an organization" [ref=e258] [cursor=pointer]:
+                    - generic: Add an organization
+            - generic [ref=e259]:
+              - button "Renew Renew Now Auto-renew Off Expires On Jun 3, 2027 Renewal Cost Click here for more information ₹749.00/yr" [ref=e262]:
+                - generic [ref=e264]:
+                  - heading "Renew" [level=5] [ref=e266]
+                  - button "Renew Now" [ref=e267] [cursor=pointer]:
+                    - generic: Renew Now
+                - generic [ref=e269]:
+                  - paragraph [ref=e270]: Auto-renew
+                  - generic [ref=e271]:
+                    - text: "Off"
+                    - checkbox [ref=e273]
+                - generic [ref=e274]:
+                  - paragraph [ref=e275]: Expires On
+                  - generic [ref=e276]: Jun 3, 2027
+                - generic [ref=e277]:
+                  - generic [ref=e278]:
+                    - paragraph [ref=e279]: Renewal Cost
+                    - button "Click here for more information" [ref=e281] [cursor=pointer]
+                  - generic [ref=e282]: ₹749.00/yr
+              - button "Sell List for Sale Your domain's estimated value is below $100 (USD) Estimated Value (USD):" [ref=e285]:
+                - generic [ref=e287]:
+                  - heading "Sell" [level=5] [ref=e289]
+                  - button "List for Sale" [ref=e290] [cursor=pointer]:
+                    - generic: List for Sale
+                - paragraph [ref=e292]: Your domain's estimated value is
+                - generic [ref=e293]:
+                  - heading "below $100" [level=5] [ref=e294]
+                  - paragraph [ref=e295]: (USD)
+                  - button "Estimated Value (USD):" [ref=e298] [cursor=pointer]
+              - button "Secure View Activity Log High Click here for more information Protection level OWNERSHIP PROTECTION Your domain is secure and protected against high risk actions" [ref=e300]:
+                - generic [ref=e302]:
+                  - heading "Secure" [level=5] [ref=e304]
+                  - button "View Activity Log" [ref=e305] [cursor=pointer]:
+                    - generic: View Activity Log
+                - generic [ref=e307]:
+                  - generic [ref=e308]:
+                    - img [ref=e309]
+                    - generic [ref=e314]:
+                      - generic [ref=e316]:
+                        - text: High
+                        - button "Click here for more information" [ref=e317]:
+                          - button "Click here for more information" [ref=e319] [cursor=pointer]
+                      - generic [ref=e320]: Protection level
+                  - generic [ref=e321]:
+                    - generic [ref=e323]: OWNERSHIP PROTECTION
+                    - paragraph [ref=e324]: Your domain is secure and protected against high risk actions
+            - generic [ref=e325]:
+              - button "Contact Info Click here for more information Edit Name Shritika Singh Address Blumen 804, Station road, mumbai, Maharashtra, India 400083 Telephone +91.9653215863 Email bunbay2026@gmail.com" [ref=e328]:
+                - generic [ref=e330]:
+                  - generic [ref=e331]:
+                    - heading "Contact Info" [level=5] [ref=e332]
+                    - button "Click here for more information" [ref=e335] [cursor=pointer]
+                  - button "Edit" [ref=e336] [cursor=pointer]:
+                    - generic: Edit
+                - generic [ref=e338]:
+                  - generic [ref=e339]: Name
+                  - generic [ref=e340]: Shritika Singh
+                  - generic [ref=e341]: Address
+                  - generic [ref=e342]: Blumen 804, Station road, mumbai, Maharashtra, India 400083
+                  - generic [ref=e343]: Telephone
+                  - generic [ref=e344]: "+91.9653215863"
+                  - generic [ref=e345]: Email
+                  - generic [ref=e346]: bunbay2026@gmail.com
+              - 'button "Domain Privacy: Limited Click here for more information Change Limited Privacy will show some contact info for this domain, including the Registrant Organization, State/Province and Country. No other contact details will be shown." [ref=e349]':
+                - generic [ref=e351]:
+                  - generic [ref=e352]:
+                    - 'heading "Domain Privacy: Limited" [level=5] [ref=e353]'
+                    - button "Click here for more information" [ref=e356] [cursor=pointer]
+                  - button "Change" [ref=e357] [cursor=pointer]:
+                    - generic: Change
+                - generic [ref=e360]:
+                  - text: Limited Privacy will
+                  - strong [ref=e361]: show some
+                  - text: contact info for this domain, including the Registrant Organization, State/Province and Country. No other contact details will be shown.
+            - button "Email Privacy Edit Your personal email address is automatically substituted with a private email address, bunbay.co.in@domainsbyproxy.com, in our WHOIS directory to protect your identity. Email privacy settings aren't available for this domain extension." [ref=e365]:
+              - generic [ref=e367]:
+                - heading "Email Privacy" [level=5] [ref=e369]
+                - button "Edit" [disabled] [ref=e370]:
+                  - generic: Edit
+              - generic [ref=e373]:
+                - text: Your personal email address is automatically substituted with a private email address, bunbay.co.in@domainsbyproxy.com, in our
+                - link "WHOIS directory" [ref=e374] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/whois/results.aspx?domain=bunbay.co.in
+                - text: to protect your identity. Email privacy settings aren't available for this domain extension.
+            - generic [ref=e375]:
+              - button "Transfer Domain Lock On Transfer to Another GoDaddy Account Transfer to Another Registrar after Aug 1, 2026" [ref=e378]:
+                - heading "Transfer" [level=5] [ref=e382]
+                - generic [ref=e384]:
+                  - paragraph [ref=e385]: Domain Lock
+                  - generic [ref=e386]:
+                    - text: "On"
+                    - checkbox [checked] [ref=e388]
+                - button "Transfer to Another GoDaddy Account" [ref=e390] [cursor=pointer]:
+                  - generic: Transfer to Another GoDaddy Account
+                - button "Transfer to Another Registrar after Aug 1, 2026" [ref=e392] [cursor=pointer]:
+                  - generic: Transfer to Another Registrar after Aug 1, 2026
+              - button "Advanced Folders Add to Folders Profile Assign to Profile Delete Domain" [ref=e395]:
+                - heading "Advanced" [level=5] [ref=e399]
+                - generic [ref=e401]:
+                  - paragraph [ref=e402]: Folders
+                  - button "Add to Folders" [ref=e403] [cursor=pointer]:
+                    - generic: Add to Folders
+                - generic [ref=e404]:
+                  - paragraph [ref=e405]: Profile
+                  - button "Assign to Profile" [ref=e406] [cursor=pointer]:
+                    - generic: Assign to Profile
+                - button "Delete Domain" [ref=e407] [cursor=pointer]:
+                  - generic: Delete Domain
+  - alert [ref=e150]
+  - button "Contact Us Contact Us" [ref=e411] [cursor=pointer]:
+    - generic [ref=e412]:
+      - img "Contact Us" [ref=e414]
+      - generic [ref=e415]: Contact Us

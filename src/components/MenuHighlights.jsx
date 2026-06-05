@@ -1,61 +1,50 @@
 import React from 'react';
-import classicImg from '../assets/hero_actual.jpg';
-import spicyImg from '../assets/burger_actual2.jpg';
-import friesImg from '../assets/burger_actual3.jpg';
-import doubleImg from '../assets/double_crunch_new.jpg';
-import comboImg from '../assets/burger_actual1.jpg';
-import nachoImg from '../assets/nacho_burger.jpg';
+import makhanImg from '../assets/hero_actual.jpg';
+import snapImg from '../assets/burger_actual2.jpg';
+import cheeseRushImg from '../assets/burger_actual3.jpg';
+import judwaImg from '../assets/double_crunch_new.jpg';
+import menuFullImg from '../assets/menu_full.png';
 
 const MenuHighlights = () => {
   const menuItems = [
     {
       id: 1,
-      name: "The Classic Cheeseburger",
-      description: "Our signature beef patty with double American cheese, fresh lettuce, tomato, and house sauce.",
-      price: "$12.99",
-      image: classicImg
+      name: "Makhan Shakhan Burger",
+      description:
+        "Crispy patty loaded with rich, buttery makhani sauce, fresh crunch, and creamy mayo—smooth, indulgent, and satisfying.",
+      price: "₹159",
+      image: makhanImg,
     },
     {
       id: 2,
-      name: "Spicy Crispy Chicken",
-      description: "Crispy fried chicken breast, spicy mayo, jalapeños, and crunchy slaw on a toasted bun.",
-      price: "$14.50",
-      image: spicyImg
+      name: "Snap and Sizzle",
+      description:
+        "Golden crispy veggie patty layered with fresh greens, crunchy cabbage, and pickled cucumber, finished with a bold Dijon mustard and creamy mayo blend.",
+      price: "₹139",
+      image: snapImg,
     },
     {
       id: 3,
-      name: "Loaded Bacon Fries",
-      description: "Golden crispy fries smothered in melted cheddar cheese, topped with crispy bacon bits and scallions.",
-      price: "$8.99",
-      image: friesImg
+      name: "Cheese Rush Tikki",
+      description:
+        "Crispy aloo tikki layered with rich melted cheese, fresh veggies, and creamy sauces—comfort food with a cheesy twist.",
+      price: "₹79",
+      image: cheeseRushImg,
     },
     {
       id: 4,
-      name: "Double Crunch Burger",
-      description: "Two crispy patties stacked with extra cheese, pickles, and our special crunch sauce.",
-      price: "$16.99",
-      image: doubleImg
+      name: "Judwa Dhamaka Burger",
+      description:
+        "Two crispy aloo tikkis layered with double melted cheese, fresh veggies, and creamy sauces—made for big cravings and bigger appetites.",
+      price: "₹99",
+      image: judwaImg,
     },
-    {
-      id: 5,
-      name: "The Family Combo",
-      description: "A giant burger paired with a generous portion of our signature fries and dipping sauce.",
-      price: "$24.99",
-      image: comboImg
-    },
-    {
-      id: 6,
-      name: "Fiesta Nacho Burger",
-      description: "Crispy patty topped with crunchy nachos, jalapeños, and zesty cheese sauce.",
-      price: "$15.99",
-      image: nachoImg
-    }
   ];
 
   return (
-    <section id="menu" className="menu-section">
+    <section className="menu-section">
       <div className="container">
-        <h2 className="section-title">Popular Picks</h2>
+        <h2 className="section-title">Must-Try Bites</h2>
         <div className="menu-grid">
           {menuItems.map((item) => (
             <div key={item.id} className="menu-card">
@@ -69,6 +58,15 @@ const MenuHighlights = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div id="menu" className="menu-poster">
+          <h2 className="section-title">Menu</h2>
+          <img
+            src={menuFullImg}
+            alt="BUNBAY full menu — burgers, fries, drinks, combos, meals, and party packs"
+            className="menu-poster-img"
+          />
         </div>
       </div>
     </section>

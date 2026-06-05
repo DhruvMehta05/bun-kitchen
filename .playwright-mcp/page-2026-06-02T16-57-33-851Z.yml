@@ -1,0 +1,267 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e4]: Skip to main content
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]
+        - link "GoDaddy" [ref=e11] [cursor=pointer]:
+          - /url: https://venture-redirector.godaddy.com/
+          - figure "GoDaddy" [ref=e12]:
+            - img [ref=e13]
+        - list [ref=e15]:
+          - listitem [ref=e163]:
+            - generic [ref=e164]: MANAGE
+          - listitem [ref=e16]:
+            - link "Portfolio" [ref=e17] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/portfolio
+              - generic [ref=e22]: Portfolio
+          - listitem [ref=e23]:
+            - link "DNS" [ref=e24] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/dnsmanagement
+              - generic [ref=e29]: DNS
+          - listitem [ref=e30]:
+            - link "Transfers" [ref=e31] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/transfers
+              - generic [ref=e36]: Transfers
+          - listitem [ref=e37]:
+            - button "Services" [ref=e38] [cursor=pointer]:
+              - generic [ref=e43]: Services
+            - list:
+              - listitem [ref=e46]:
+                - link "DNS Hosting" [ref=e47] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dnshosting
+                  - generic [ref=e50]: DNS Hosting
+              - listitem [ref=e51]:
+                - link "Domain Broker" [ref=e52] [cursor=pointer]:
+                  - /url: https://dbs.godaddy.com/
+                  - generic [ref=e55]: Domain Broker
+              - listitem [ref=e165]:
+                - link "Pre-Registration" [ref=e166] [cursor=pointer]:
+                  - /url: https://preregistration.godaddy.com/
+                  - generic [ref=e169]: Pre-Registration
+              - listitem [ref=e61]:
+                - link "Block" [ref=e62] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/blocks
+                  - generic [ref=e65]: Block
+              - listitem [ref=e66]:
+                - link "Negotiations" [ref=e67] [cursor=pointer]:
+                  - /url: https://aftermarket.godaddy.com/negotiations
+                  - generic [ref=e70]: Negotiations
+          - listitem [ref=e100]:
+            - button "Settings" [ref=e101] [cursor=pointer]:
+              - generic [ref=e106]: Settings
+            - list:
+              - listitem [ref=e109]:
+                - link "Delegate Access" [ref=e110] [cursor=pointer]:
+                  - /url: https://sso.godaddy.com/access
+                  - generic [ref=e113]: Delegate Access
+              - listitem [ref=e114]:
+                - link "DNS Templates" [ref=e115] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dns/templates
+                  - generic [ref=e118]: DNS Templates
+              - listitem [ref=e119]:
+                - link "Exported Lists" [ref=e120] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/exported-lists
+                  - generic [ref=e123]: Exported Lists
+          - listitem [ref=e124]:
+            - link "Activity Log" [ref=e125] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/activity/log
+              - generic [ref=e130]: Activity Log
+          - listitem [ref=e170]
+          - listitem [ref=e171]:
+            - generic [ref=e172]: BUY AND SELL
+          - listitem [ref=e173]:
+            - link "Afternic" [ref=e174] [cursor=pointer]:
+              - /url: https://sso.godaddy.com/federate/afternic?path=/dashboard?itc=dcc_portfolio_afternic
+              - generic [ref=e179]: Afternic
+          - listitem [ref=e180]:
+            - link "Auctions" [ref=e181] [cursor=pointer]:
+              - /url: https://auctions.godaddy.com/beta?itc=dcc_portfolio_auctions
+              - generic [ref=e186]: Auctions
+          - listitem [ref=e187]:
+            - link "Domain Parking" [ref=e188] [cursor=pointer]:
+              - /url: https://www.godaddy.com/domain-parking/dashboard?itc=dcc_portfolio_parking
+              - generic [ref=e193]: Domain Parking
+          - listitem [ref=e194]
+          - listitem [ref=e195]:
+            - generic [ref=e196]: LEARN
+          - listitem [ref=e197]:
+            - link "Domain Academy" [ref=e198] [cursor=pointer]:
+              - /url: https://community.godaddy.com/s/domain-academy?itc=dcc_portfolio_domain_academy
+              - generic [ref=e203]: Domain Academy
+      - generic [ref=e131]:
+        - link "Help Center" [ref=e132] [cursor=pointer]:
+          - /url: https://www.godaddy.com/help
+          - generic [ref=e133]: Help Center
+        - button "Notifications" [ref=e210] [cursor=pointer]:
+          - generic "Notifications" [ref=e211]:
+            - generic [ref=e215]: "2"
+        - button "App Switcher" [ref=e135] [cursor=pointer]
+        - button "Customer Info" [ref=e137] [cursor=pointer]:
+          - generic [ref=e138]: SS
+        - link "Empty Cart" [ref=e220] [cursor=pointer]:
+          - /url: https://www.godaddy.com/en-in/pricing
+          - generic "Empty Cart" [ref=e221]
+  - main [ref=e140]:
+    - generic [ref=e144]:
+      - heading "DNS Management" [level=1] [ref=e147]
+      - generic [ref=e149]:
+        - heading "bunbay.co.in" [level=2] [ref=e150]
+        - generic [ref=e151]:
+          - button "Domain Settings" [ref=e152] [cursor=pointer]:
+            - generic: Domain Settings
+          - button "Select a different domain" [ref=e155] [cursor=pointer]:
+            - generic: Select a different domain
+      - generic [ref=e223]:
+        - navigation [ref=e224]:
+          - tablist "Navigation" [ref=e226]:
+            - tab "DNS Records" [selected] [ref=e227] [cursor=pointer]
+            - tab "Forwarding" [ref=e228] [cursor=pointer]
+            - tab "Nameservers" [ref=e229] [cursor=pointer]
+            - tab "Premium DNS" [ref=e230] [cursor=pointer]
+            - tab "Hostnames" [ref=e231] [cursor=pointer]
+        - tabpanel "DNS Records" [ref=e232]:
+          - table [ref=e240]:
+            - rowgroup [ref=e241]:
+              - row "Type Click here for more information Name Click here for more information Data Click here for more information TTL Click here for more information Delete Edit" [ref=e242]:
+                - columnheader [ref=e243]
+                - columnheader "Type Click here for more information" [ref=e244]:
+                  - generic [ref=e245]:
+                    - text: Type
+                    - button "Click here for more information" [ref=e248] [cursor=pointer]
+                - columnheader "Name Click here for more information" [ref=e249]:
+                  - generic [ref=e250]:
+                    - text: Name
+                    - button "Click here for more information" [ref=e253] [cursor=pointer]
+                - columnheader "Data Click here for more information" [ref=e254]:
+                  - generic [ref=e255]:
+                    - text: Data
+                    - button "Click here for more information" [ref=e258] [cursor=pointer]
+                - columnheader "TTL Click here for more information" [ref=e259]:
+                  - generic [ref=e260]:
+                    - text: TTL
+                    - button "Click here for more information" [ref=e263] [cursor=pointer]
+                - columnheader "Delete" [ref=e264]:
+                  - generic [ref=e266]: Delete
+                - columnheader "Edit" [ref=e267]:
+                  - generic [ref=e269]: Edit
+            - rowgroup [ref=e270]:
+              - row "a @ WebsiteBuilder Site 1 Hour Delete Edit" [ref=e271]:
+                - cell [ref=e272]:
+                  - checkbox [disabled] [ref=e275]
+                - cell "a" [ref=e276]
+                - cell "@" [ref=e277]
+                - cell "WebsiteBuilder Site" [ref=e278]
+                - cell "1 Hour" [ref=e279]
+                - cell "Delete" [ref=e280]:
+                  - button "Delete" [disabled] [ref=e281]
+                - cell "Edit" [ref=e282]:
+                  - button "Edit" [disabled] [ref=e283]
+              - row "ns @ ns27.domaincontrol.com. 1 Hour Can't delete Can't edit" [ref=e284]:
+                - cell [ref=e285]:
+                  - checkbox [disabled] [ref=e288]
+                - cell "ns" [ref=e289]
+                - cell "@" [ref=e290]
+                - cell "ns27.domaincontrol.com." [ref=e291]
+                - cell "1 Hour" [ref=e292]
+                - cell "Can't delete" [ref=e293]:
+                  - generic [ref=e296]: Can't delete
+                - cell "Can't edit" [ref=e297]:
+                  - generic [ref=e300]: Can't edit
+              - row "ns @ ns28.domaincontrol.com. 1 Hour Can't delete Can't edit" [ref=e301]:
+                - cell [ref=e302]:
+                  - checkbox [disabled] [ref=e305]
+                - cell "ns" [ref=e306]
+                - cell "@" [ref=e307]
+                - cell "ns28.domaincontrol.com." [ref=e308]
+                - cell "1 Hour" [ref=e309]
+                - cell "Can't delete" [ref=e310]:
+                  - generic [ref=e313]: Can't delete
+                - cell "Can't edit" [ref=e314]:
+                  - generic [ref=e317]: Can't edit
+              - row "cname www bunbay.co.in. 1 Hour Delete Edit" [ref=e318]:
+                - cell [ref=e319]:
+                  - checkbox [disabled] [ref=e322]
+                - cell "cname" [ref=e323]
+                - cell "www" [ref=e324]
+                - cell "bunbay.co.in." [ref=e325]
+                - cell "1 Hour" [ref=e326]
+                - cell "Delete" [ref=e327]:
+                  - button "Delete" [disabled] [ref=e328]
+                - cell "Edit" [ref=e329]:
+                  - button "Edit" [disabled] [ref=e330]
+              - row "cname _domainconnect _domainconnect.gd.domaincontrol.com. 1 Hour Delete Edit" [ref=e331]:
+                - cell [ref=e332]:
+                  - checkbox [disabled] [ref=e335]
+                - cell "cname" [ref=e336]
+                - cell "_domainconnect" [ref=e337]
+                - cell "_domainconnect.gd.domaincontrol.com." [ref=e338]
+                - cell "1 Hour" [ref=e339]
+                - cell "Delete" [ref=e340]:
+                  - button "Delete" [disabled] [ref=e341]
+                - cell "Edit" [ref=e342]:
+                  - button "Edit" [disabled] [ref=e343]
+              - 'row "soa @ Primary nameserver: ns27.domaincontrol.com. 1 Hour Delete Edit" [ref=e344]':
+                - cell [ref=e345]:
+                  - checkbox [disabled] [ref=e348]
+                - cell "soa" [ref=e349]
+                - cell "@" [ref=e350]
+                - 'cell "Primary nameserver: ns27.domaincontrol.com." [ref=e351]'
+                - cell "1 Hour" [ref=e352]
+                - cell "Delete" [ref=e353]:
+                  - button "Delete" [disabled] [ref=e354]
+                - cell "Edit" [ref=e355]:
+                  - button "Edit" [disabled] [ref=e356]
+              - row "txt _dmarc v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net; 1 Hour Delete Edit" [ref=e357]:
+                - cell [ref=e358]:
+                  - checkbox [disabled] [ref=e361]
+                - cell "txt" [ref=e362]
+                - cell "_dmarc" [ref=e363]
+                - cell "v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;" [ref=e364]
+                - cell "1 Hour" [ref=e365]
+                - cell "Delete" [ref=e366]:
+                  - button "Delete" [disabled] [ref=e367]
+                - cell "Edit" [ref=e368]:
+                  - button "Edit" [disabled] [ref=e369]
+      - generic [ref=e381]:
+        - generic [ref=e383]:
+          - img "create_a_website_wordpress_5-4" [ref=e386]
+          - generic [ref=e388]:
+            - paragraph [ref=e389]:
+              - generic [ref=e390]: HIGHLY CUSTOMIZABLE
+            - heading "Managed WordPress" [level=4] [ref=e391]:
+              - generic [ref=e392]: Managed WordPress
+            - paragraph [ref=e393]: We make it easier to create, launch, and manage your WordPress site.
+            - generic [ref=e394]:
+              - list
+            - group [ref=e398]:
+              - button "Explore Plans" [ref=e400] [cursor=pointer]:
+                - generic: Explore Plans
+        - generic [ref=e402]:
+          - img "security-web-hosting-5_4" [ref=e405]
+          - generic [ref=e407]:
+            - paragraph [ref=e408]:
+              - generic [ref=e409]: ADVANCED USERS
+            - heading "Web Hosting" [level=4] [ref=e410]:
+              - generic [ref=e411]: Web Hosting
+            - paragraph [ref=e412]: From personal sites to high-performance sites, get web hosting you can trust.
+            - generic [ref=e413]:
+              - list
+            - group [ref=e417]:
+              - button "Explore Plans" [ref=e419] [cursor=pointer]:
+                - generic: Explore Plans
+        - generic [ref=e421]:
+          - img "create-my-website-dify-5_4" [ref=e424]
+          - generic [ref=e426]:
+            - paragraph [ref=e427]:
+              - generic [ref=e428]: Promote your products
+            - heading "Link in Bio" [level=1] [ref=e429]:
+              - generic [ref=e430]: Link in Bio
+            - generic [ref=e432]: Share who you are and what you do with your social audience in just a few clicks.
+            - group [ref=e436]:
+              - link "Get Started" [ref=e438] [cursor=pointer]:
+                - /url: https://www.godaddy.com/en-in/link-in-bio
+                - generic [ref=e439]: Get Started
+  - alert [ref=e162]

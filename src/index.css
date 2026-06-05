@@ -1,24 +1,30 @@
 :root {
-  --primary: #FF7A00;      /* Vibrant Orange */
+  --primary: #FF7A00;
   --primary-hover: #E66A00;
-  --secondary: #E51E25;    /* Bold Red */
+  --secondary: #E51E25;
   --secondary-hover: #C51A20;
-  --accent: #FFC700;       /* Warm Yellow */
-  --bg-color: #FFFDF9;     /* Off-white/Cream for soft background */
-  --text-dark: #2B1810;    /* Dark brown/black for text */
-  --text-light: #FFFFFF;
-  --surface-color: #FFFFFF;
-  
+  --accent: #FFC700;
+  --bg-color: #2e2e32;
+  --surface-color: #38383d;
+  --surface-elevated: #45454b;
+  --footer-bg: #26262a;
+  --text-primary: #f5f3ef;
+  --text-muted: #b0b0b5;
+  --text-dark: #f5f3ef;
+  --text-light: #ffffff;
+  --border-subtle: rgba(255, 255, 255, 0.1);
+
   --font-main: 'Outfit', sans-serif;
-  
+
   --transition-speed: 0.3s;
   --border-radius-lg: 24px;
   --border-radius-md: 16px;
   --border-radius-sm: 8px;
-  
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 10px 15px -3px rgba(229, 30, 37, 0.1), 0 4px 6px -2px rgba(229, 30, 37, 0.05);
-  --shadow-lg: 0 20px 25px -5px rgba(255, 122, 0, 0.15), 0 10px 10px -5px rgba(255, 122, 0, 0.04);
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 20px 40px rgba(255, 122, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
 }
 
 * {
@@ -133,8 +139,9 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(255, 253, 249, 0.9);
+  background: rgba(46, 46, 50, 0.92);
   backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-subtle);
   z-index: 1000;
   padding: 15px 0;
   box-shadow: var(--shadow-sm);
@@ -179,7 +186,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero {
   padding: 160px 0 100px;
-  background: radial-gradient(circle at 50% 50%, #fffdf9 0%, #fff5e6 100%);
+  background: radial-gradient(circle at 50% 30%, #45403c 0%, var(--bg-color) 70%);
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -197,16 +204,19 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
-.hero-text h1 .highlight {
+.hero-text h1 .highlight,
+.section-title {
   background: linear-gradient(to right, var(--primary), var(--secondary));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 40px;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .hero-image {
@@ -216,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-image img {
   width: 100%;
   animation: float 6s ease-in-out infinite;
-  filter: drop-shadow(0 25px 25px rgba(0,0,0,0.15));
+  filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.6));
 }
 
 .hero-badge {
@@ -224,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 20px;
   right: 20px;
   background: var(--accent);
-  color: var(--text-dark);
+  color: #1a1008;
   font-weight: 800;
   padding: 15px;
   border-radius: 50%;
@@ -244,13 +254,13 @@ h1, h2, h3, h4, h5, h6 {
 .menu-section {
   padding: 100px 0;
   background-color: var(--surface-color);
+  border-top: 1px solid var(--border-subtle);
 }
 
 .section-title {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 60px;
-  color: var(--secondary);
 }
 
 .menu-grid {
@@ -260,7 +270,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-card {
-  background: var(--bg-color);
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-subtle);
   border-radius: var(--border-radius-lg);
   padding: 20px;
   box-shadow: var(--shadow-sm);
@@ -288,7 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .menu-card-content p {
-  color: #666;
+  color: var(--text-muted);
   margin-bottom: 20px;
   font-size: 0.95rem;
 }
@@ -305,9 +316,34 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary);
 }
 
+#home,
+#menu,
+#contact {
+  scroll-margin-top: 110px;
+}
+
+.menu-poster {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.menu-poster .section-title {
+  margin-bottom: 40px;
+}
+
+.menu-poster-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-subtle);
+}
+
 /* Footer Section */
 .footer {
-  background: var(--text-dark);
+  background: var(--footer-bg);
+  border-top: 1px solid var(--border-subtle);
   color: var(--text-light);
   padding: 60px 0 20px;
   text-align: center;

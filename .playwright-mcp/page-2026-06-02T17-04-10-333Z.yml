@@ -1,0 +1,197 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e4]: Skip to main content
+    - generic [ref=e6]:
+      - generic [ref=e8]:
+        - button [ref=e9] [cursor=pointer]
+        - link "GoDaddy" [ref=e11] [cursor=pointer]:
+          - /url: https://venture-redirector.godaddy.com/
+          - figure "GoDaddy" [ref=e12]:
+            - img [ref=e13]
+        - list [ref=e15]:
+          - listitem [ref=e163]:
+            - generic [ref=e164]: MANAGE
+          - listitem [ref=e16]:
+            - link "Portfolio" [ref=e17] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/portfolio
+              - generic [ref=e22]: Portfolio
+          - listitem [ref=e23]:
+            - link "DNS" [ref=e24] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/dnsmanagement
+              - generic [ref=e29]: DNS
+          - listitem [ref=e30]:
+            - link "Transfers" [ref=e31] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/transfers
+              - generic [ref=e36]: Transfers
+          - listitem [ref=e37]:
+            - button "Services" [ref=e38] [cursor=pointer]:
+              - generic [ref=e43]: Services
+            - list:
+              - listitem [ref=e46]:
+                - link "DNS Hosting" [ref=e47] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dnshosting
+                  - generic [ref=e50]: DNS Hosting
+              - listitem [ref=e51]:
+                - link "Domain Broker" [ref=e52] [cursor=pointer]:
+                  - /url: https://dbs.godaddy.com/
+                  - generic [ref=e55]: Domain Broker
+              - listitem [ref=e165]:
+                - link "Pre-Registration" [ref=e166] [cursor=pointer]:
+                  - /url: https://preregistration.godaddy.com/
+                  - generic [ref=e169]: Pre-Registration
+              - listitem [ref=e61]:
+                - link "Block" [ref=e62] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/blocks
+                  - generic [ref=e65]: Block
+              - listitem [ref=e66]:
+                - link "Negotiations" [ref=e67] [cursor=pointer]:
+                  - /url: https://aftermarket.godaddy.com/negotiations
+                  - generic [ref=e70]: Negotiations
+          - listitem [ref=e100]:
+            - button "Settings" [ref=e101] [cursor=pointer]:
+              - generic [ref=e106]: Settings
+            - list:
+              - listitem [ref=e109]:
+                - link "Delegate Access" [ref=e110] [cursor=pointer]:
+                  - /url: https://sso.godaddy.com/access
+                  - generic [ref=e113]: Delegate Access
+              - listitem [ref=e114]:
+                - link "DNS Templates" [ref=e115] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/dns/templates
+                  - generic [ref=e118]: DNS Templates
+              - listitem [ref=e119]:
+                - link "Exported Lists" [ref=e120] [cursor=pointer]:
+                  - /url: https://dcc.godaddy.com/control/exported-lists
+                  - generic [ref=e123]: Exported Lists
+          - listitem [ref=e124]:
+            - link "Activity Log" [ref=e125] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/activity/log
+              - generic [ref=e130]: Activity Log
+          - listitem [ref=e170]
+          - listitem [ref=e171]:
+            - generic [ref=e172]: BUY AND SELL
+          - listitem [ref=e173]:
+            - link "Afternic" [ref=e174] [cursor=pointer]:
+              - /url: https://sso.godaddy.com/federate/afternic?path=/dashboard?itc=dcc_portfolio_afternic
+              - generic [ref=e179]: Afternic
+          - listitem [ref=e180]:
+            - link "Auctions" [ref=e181] [cursor=pointer]:
+              - /url: https://auctions.godaddy.com/beta?itc=dcc_portfolio_auctions
+              - generic [ref=e186]: Auctions
+          - listitem [ref=e187]:
+            - link "Domain Parking" [ref=e188] [cursor=pointer]:
+              - /url: https://www.godaddy.com/domain-parking/dashboard?itc=dcc_portfolio_parking
+              - generic [ref=e193]: Domain Parking
+          - listitem [ref=e194]
+          - listitem [ref=e195]:
+            - generic [ref=e196]: LEARN
+          - listitem [ref=e197]:
+            - link "Domain Academy" [ref=e198] [cursor=pointer]:
+              - /url: https://community.godaddy.com/s/domain-academy?itc=dcc_portfolio_domain_academy
+              - generic [ref=e203]: Domain Academy
+      - generic [ref=e131]:
+        - link "Help Center" [ref=e132] [cursor=pointer]:
+          - /url: https://www.godaddy.com/help
+          - generic [ref=e133]: Help Center
+        - button "Notifications" [ref=e210] [cursor=pointer]:
+          - generic "Notifications" [ref=e211]:
+            - generic [ref=e215]: "2"
+        - button "App Switcher" [ref=e135] [cursor=pointer]
+        - button "Customer Info" [ref=e137] [cursor=pointer]:
+          - generic [ref=e138]: SS
+        - link "Empty Cart" [ref=e226] [cursor=pointer]:
+          - /url: https://www.godaddy.com/en-in/pricing
+          - generic "Empty Cart" [ref=e227]
+  - main [ref=e140]:
+    - generic [ref=e144]:
+      - heading "DNS Management" [level=1] [ref=e147]
+      - generic [ref=e448]:
+        - heading "bunbay.co.in" [level=2] [ref=e449]
+        - generic [ref=e450]:
+          - button "Domain Settings" [ref=e451] [cursor=pointer]:
+            - generic: Domain Settings
+          - button "Select a different domain" [ref=e452] [cursor=pointer]:
+            - generic: Select a different domain
+      - generic [ref=e229]:
+        - navigation [ref=e230]:
+          - tablist "Navigation" [ref=e232]:
+            - tab "DNS Records" [ref=e233] [cursor=pointer]
+            - tab "Forwarding" [active] [selected] [ref=e234] [cursor=pointer]
+            - tab "Nameservers" [ref=e235] [cursor=pointer]
+            - tab "Premium DNS" [ref=e236] [cursor=pointer]
+            - tab "Hostnames" [ref=e237] [cursor=pointer]
+        - tabpanel "Forwarding" [ref=e453]:
+          - generic [ref=e454]:
+            - generic [ref=e455]:
+              - alert [ref=e456]:
+                - generic [ref=e460]: Forwarding over HTTPS is now available for your domains. We'll automatically apply an SSL certificate to your domain when you set up or edit forwarding, increasing reliability for your domain. It can take a few hours for the SSL to be active.
+              - paragraph [ref=e461]:
+                - link "Forwarding" [ref=e462] [cursor=pointer]:
+                  - /url: https://www.godaddy.com/help/a-12123?plid=1
+                  - generic [ref=e463]: Forwarding
+                - text: the domain name and/or its subdomains lets you automatically direct your visitors to different places on the web.
+              - generic [ref=e464]:
+                - generic [ref=e465]: Domain
+                - button "Add Forwarding" [disabled] [ref=e466]:
+                  - generic: Add Forwarding
+              - paragraph [ref=e467]: Not set up
+              - generic [ref=e468]:
+                - generic [ref=e469]: Subdomains
+                - button "Add Forwarding" [disabled] [ref=e470]:
+                  - generic: Add Forwarding
+              - paragraph [ref=e471]: Not set up
+              - generic:
+                - table:
+                  - rowgroup
+            - paragraph [ref=e472]: Optional
+            - paragraph [ref=e473]: Turn a long URL into a short and tidy link for easier sharing and posting after you've forwarded your domain. Your short link typically starts working within moments but could take up to 48 hours to update globally.
+            - button "GoShort Open GoShort" [ref=e477]:
+              - generic [ref=e478]:
+                - heading "GoShort" [level=5] [ref=e480]
+                - button "Open GoShort" [disabled] [ref=e481]
+      - generic [ref=e387]:
+        - generic [ref=e389]:
+          - img "create_a_website_wordpress_5-4" [ref=e392]
+          - generic [ref=e394]:
+            - paragraph [ref=e395]:
+              - generic [ref=e396]: HIGHLY CUSTOMIZABLE
+            - heading "Managed WordPress" [level=4] [ref=e397]:
+              - generic [ref=e398]: Managed WordPress
+            - paragraph [ref=e399]: We make it easier to create, launch, and manage your WordPress site.
+            - generic [ref=e400]:
+              - list
+            - group [ref=e404]:
+              - button "Explore Plans" [ref=e406] [cursor=pointer]:
+                - generic: Explore Plans
+        - generic [ref=e408]:
+          - img "security-web-hosting-5_4" [ref=e411]
+          - generic [ref=e413]:
+            - paragraph [ref=e414]:
+              - generic [ref=e415]: ADVANCED USERS
+            - heading "Web Hosting" [level=4] [ref=e416]:
+              - generic [ref=e417]: Web Hosting
+            - paragraph [ref=e418]: From personal sites to high-performance sites, get web hosting you can trust.
+            - generic [ref=e419]:
+              - list
+            - group [ref=e423]:
+              - button "Explore Plans" [ref=e425] [cursor=pointer]:
+                - generic: Explore Plans
+        - generic [ref=e427]:
+          - img "create-my-website-dify-5_4" [ref=e430]
+          - generic [ref=e432]:
+            - paragraph [ref=e433]:
+              - generic [ref=e434]: Promote your products
+            - heading "Link in Bio" [level=1] [ref=e435]:
+              - generic [ref=e436]: Link in Bio
+            - generic [ref=e438]: Share who you are and what you do with your social audience in just a few clicks.
+            - group [ref=e442]:
+              - link "Get Started" [ref=e444] [cursor=pointer]:
+                - /url: https://www.godaddy.com/en-in/link-in-bio
+                - generic [ref=e445]: Get Started
+  - alert [ref=e162]: DNS Management
+  - button "Contact Us Contact Us" [ref=e484] [cursor=pointer]:
+    - generic [ref=e485]:
+      - img "Contact Us" [ref=e487]
+      - generic [ref=e488]: Contact Us

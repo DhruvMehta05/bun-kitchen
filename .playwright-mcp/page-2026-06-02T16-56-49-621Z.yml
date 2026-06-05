@@ -1,0 +1,113 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e4]: Skip to main content
+    - banner [ref=e5]:
+      - navigation [ref=e6]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - link "GoDaddy" [ref=e10] [cursor=pointer]:
+              - /url: https://venture-redirector.godaddy.com/?referrer=my-products-logo
+              - figure "GoDaddy" [ref=e11]:
+                - img [ref=e12]
+            - button "My Products" [ref=e18]:
+              - generic [ref=e22]: My Products
+          - list [ref=e24]:
+            - listitem [ref=e25]:
+              - link "Help" [ref=e26] [cursor=pointer]:
+                - /url: https://www.godaddy.com/help?referrer=https%253A%252F%252Faccount.godaddy.com%252Fproducts%253Fpath%253D%25252Flogin%25252Fcta%25252Fadditional-factor%25253Fapp%25253Daccount%252526path%25253D%25252Fproducts%252526status%25253D0%252526variant%25253DTreatmentA%2526app%253Dsso
+            - listitem [ref=e28]:
+              - link "Empty Cart" [ref=e32] [cursor=pointer]:
+                - /url: https://www.godaddy.com/en-in/pricing
+                - generic "Empty Cart" [ref=e33]
+            - listitem [ref=e35]:
+              - button "Notifications" [ref=e41] [cursor=pointer]:
+                - generic "Notifications" [ref=e42]:
+                  - generic [ref=e46]: "2"
+            - listitem [ref=e47]:
+              - button "Customer info" [ref=e51]:
+                - generic [ref=e52]: Shritika
+      - navigation
+  - main [ref=e58]:
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - alert [ref=e66]:
+          - generic [ref=e69]:
+            - generic [ref=e72]: You can once again use your locally issued MasterCard and Visa credit cards to auto-renew subscriptions!
+            - button "Learn More" [ref=e74] [cursor=pointer]:
+              - generic: Learn More
+        - generic [ref=e75]:
+          - heading "My Products" [level=1] [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e80]:
+              - combobox "Search using your business name or desired domain name" [ref=e83]
+              - button "Search for a new domain" [ref=e84] [cursor=pointer]:
+                - generic: Search
+            - link "Set up a free website" [ref=e86] [cursor=pointer]:
+              - /url: https://onboarding.godaddy.com/?itc=myproducts-venture-tiles-start-new
+              - generic [ref=e89]: Set up a free website
+          - generic [ref=e90]:
+            - heading "Jump back in!" [level=3] [ref=e91]
+            - generic "BunBay" [ref=e94] [cursor=pointer]:
+              - generic [ref=e96]:
+                - img [ref=e98]
+                - generic [ref=e101]: Upgrade your coming soon page to a full site!
+              - generic [ref=e106]:
+                - generic [ref=e107]: BunBay
+                - generic [ref=e108]:
+                  - generic [ref=e109]: bunbay.co.in
+                  - generic [ref=e110]: Domain, Website
+      - generic [ref=e111]:
+        - generic [ref=e112]:
+          - heading "All Products and Services" [level=3] [ref=e114]
+          - generic [ref=e116]:
+            - generic [ref=e117] [cursor=pointer]:
+              - button "See all Domains products":
+                - generic "See all Domains products" [ref=e120]:
+                  - heading "Domains" [level=3] [ref=e121]
+              - button "Manage All" [ref=e123]:
+                - generic: Manage All
+            - generic [ref=e126]:
+              - generic [ref=e127]:
+                - generic [ref=e129]: bunbay.co.in
+                - generic [ref=e130]:
+                  - text: "Protection Plan: Ownership Protection"
+                  - button "Change Protection" [ref=e131] [cursor=pointer]:
+                    - generic: Change Protection
+              - group [ref=e132]:
+                - generic [ref=e133]:
+                  - link "DNS" [ref=e134] [cursor=pointer]:
+                    - /url: https://dcc.godaddy.com/control/dnsmanagement?domainName=bunbay.co.in
+                    - generic [ref=e135]: DNS
+                  - link "Manage" [ref=e136] [cursor=pointer]:
+                    - /url: https://dashboard.godaddy.com/venture?domainName=bunbay.co.in&referrer=my-products
+                    - generic [ref=e137]: Manage
+          - generic [ref=e140] [cursor=pointer]:
+            - button "See all Websites + Marketing products" [expanded]:
+              - generic "See all Websites + Marketing products" [ref=e143]:
+                - heading "Websites + Marketing" [level=3] [ref=e144]
+          - generic [ref=e147]:
+            - generic [ref=e148] [cursor=pointer]:
+              - button "See all Managed WordPress products":
+                - generic "See all Managed WordPress products" [ref=e151]:
+                  - heading "Managed WordPress" [level=3] [ref=e152]
+              - button "Manage All" [ref=e154]:
+                - generic: Manage All
+            - generic [ref=e157]:
+              - strong [ref=e158]: Managed Hosting for WordPress – Free Trial
+              - button "Start for Free" [ref=e159] [cursor=pointer]:
+                - generic: Start for Free
+        - generic [ref=e162] [cursor=pointer]:
+          - button "See all Additional Products products" [expanded]:
+            - generic "See all Additional Products products" [ref=e165]:
+              - heading "Additional Products" [level=3] [ref=e166]
+  - contentinfo [ref=e168]:
+    - contentinfo [ref=e169]:
+      - generic [ref=e170]:
+        - text: Copyright © 1999 - 2026 GoDaddy Operating Company, LLC. All Rights Reserved.
+        - link "Privacy Policy" [ref=e171] [cursor=pointer]:
+          - /url: https://www.godaddy.com/legal/agreements/privacy-policy
+        - link "Do not sell my personal information" [ref=e173] [cursor=pointer]:
+          - /url: https://www.godaddy.com/legal/agreements/cookie-policy
+  - alert [ref=e187]

@@ -1,0 +1,74 @@
+- generic [ref=e1]:
+  - main [ref=e3]:
+    - generic [ref=e14]:
+      - generic [ref=e16]:
+        - figure "GoDaddy" [ref=e20]:
+          - img [ref=e21]
+        - heading "Sign in" [level=1] [ref=e25]
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: New to GoDaddy?
+            - link "Create an Account" [ref=e30] [cursor=pointer]:
+              - /url: https://sso.godaddy.com/account/create?app=account&path=%2Fproducts
+              - generic [ref=e31]: Create an Account
+          - paragraph [ref=e34]:
+            - text: By clicking "Sign In" below, you agree to GoDaddy's Universal
+            - link "Terms of Service" [ref=e35] [cursor=pointer]:
+              - /url: https://www.godaddy.com/legal/agreements/universal-terms-of-service-agreement?app=account&path=%2Fproducts
+              - generic [ref=e36]: Terms of Service
+            - text: (updated 29 Apr 2026) and
+            - link "Privacy Policy" [ref=e37] [cursor=pointer]:
+              - /url: https://www.godaddy.com/legal/agreements/privacy-policy?app=account&path=%2Fproducts
+              - generic [ref=e38]: Privacy Policy
+            - text: .
+          - generic [ref=e39]:
+            - generic [ref=e42]:
+              - link "Use email" [ref=e44] [cursor=pointer]:
+                - /url: /login/progressive?app=account&path=%2Fproducts&status=0
+                - generic [ref=e45]: Use email
+              - generic [ref=e48]:
+                - generic:
+                  - text: "Username or Customer #"
+                  - generic: "*"
+                - 'textbox "Username or Customer #" [active] [ref=e49]'
+            - generic [ref=e50]:
+              - generic [ref=e52]:
+                - generic [ref=e55]:
+                  - generic:
+                    - text: Password
+                    - generic: "*"
+                  - textbox "Password" [ref=e56]
+                - button
+              - button "Show password" [ref=e57] [cursor=pointer]:
+                - generic: Show
+            - generic [ref=e59]:
+              - generic [ref=e60] [cursor=pointer]:
+                - checkbox "Keep me signed in on this device" [checked] [ref=e61]
+                - text: I
+              - paragraph [ref=e64] [cursor=pointer]: Keep me signed in on this device
+            - button "Sign In" [ref=e65] [cursor=pointer]:
+              - generic: Sign In
+            - generic [ref=e66]:
+              - paragraph [ref=e68]: or sign in with
+              - generic [ref=e69]:
+                - button "Sign in with Apple" [ref=e70] [cursor=pointer]
+                - button "Sign in with Facebook" [ref=e71] [cursor=pointer]
+                - button "Sign in with Google" [ref=e72] [cursor=pointer]
+        - paragraph [ref=e73]:
+          - text: Need to find
+          - link "find your username" [ref=e74] [cursor=pointer]:
+            - /url: https://sso.godaddy.com/account/retrieve?app=account&path=%2Fproducts
+            - generic [ref=e75]: your username
+          - text: or
+          - link "find your password" [ref=e76] [cursor=pointer]:
+            - /url: https://sso.godaddy.com/account/reset?app=account&path=%2Fproducts
+            - generic [ref=e77]: your password
+          - text: "?"
+  - contentinfo [ref=e78]:
+    - contentinfo [ref=e79]:
+      - generic [ref=e80]:
+        - text: Copyright © 1999 - 2026 GoDaddy Operating Company, LLC. All Rights Reserved.
+        - link "Privacy Policy" [ref=e81] [cursor=pointer]:
+          - /url: https://www.godaddy.com/legal/agreements/privacy-policy
+  - alert [ref=e82]

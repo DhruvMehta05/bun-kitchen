@@ -1,0 +1,212 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "Skip to main content" [ref=e4] [cursor=pointer]:
+      - /url: "#main"
+      - generic [ref=e5]: Skip to main content
+    - generic [ref=e7]:
+      - generic [ref=e9]:
+        - button [ref=e10] [cursor=pointer]
+        - link "GoDaddy" [ref=e12] [cursor=pointer]:
+          - /url: https://venture-redirector.godaddy.com/
+          - figure "GoDaddy" [ref=e13]:
+            - img [ref=e14]
+        - generic [ref=e19]: BunBay
+        - list [ref=e20]:
+          - listitem [ref=e21]:
+            - link "Dashboard" [ref=e22] [cursor=pointer]:
+              - /url: https://dashboard.godaddy.com/venture?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&ua_placement=shared_header
+              - generic [ref=e27]: Dashboard
+          - listitem [ref=e28]:
+            - link "Domain" [ref=e29] [cursor=pointer]:
+              - /url: https://dcc.godaddy.com/control/portfolio/bunbay.co.in/settings?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&ua_placement=shared_header
+              - generic [ref=e34]: Domain
+          - listitem [ref=e35]:
+            - link "Website" [ref=e36] [cursor=pointer]:
+              - /url: https://dashboard.godaddy.com/venture/website?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&ua_placement=shared_header
+              - generic [ref=e41]: Website
+          - listitem [ref=e42]:
+            - link "Email" [ref=e43] [cursor=pointer]:
+              - /url: https://dashboard.godaddy.com/venture/email?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&ua_placement=shared_header
+              - generic [ref=e48]: Email
+          - listitem [ref=e49]:
+            - button "Store" [ref=e50] [cursor=pointer]:
+              - generic [ref=e55]: Store
+            - list:
+              - listitem [ref=e58]:
+                - link "Overview" [ref=e59] [cursor=pointer]:
+                  - /url: https://b7517ec9-ee71-4f7e-aeb6-f95186398883.onlinestore.godaddy.com/admin/dashboard?ua_placement=shared_header
+                  - generic [ref=e62]: Overview
+              - listitem [ref=e63]:
+                - link "Products" [ref=e64] [cursor=pointer]:
+                  - /url: https://spa.commerce.godaddy.com/products?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&storeId=29149570-c1f1-436f-9990-c35638a7daa1&ua_placement=shared_header
+                  - generic [ref=e67]: Products
+              - listitem [ref=e68]:
+                - link "Categories" [ref=e69] [cursor=pointer]:
+                  - /url: https://spa.commerce.godaddy.com/categories?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&storeId=29149570-c1f1-436f-9990-c35638a7daa1&ua_placement=shared_header
+                  - generic [ref=e72]: Categories
+              - listitem [ref=e73]:
+                - link "Orders" [ref=e74] [cursor=pointer]:
+                  - /url: https://spa.commerce.godaddy.com/orders?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&storeId=29149570-c1f1-436f-9990-c35638a7daa1&ua_placement=shared_header
+                  - generic [ref=e77]: Orders
+              - listitem [ref=e78]:
+                - link "Settings" [ref=e79] [cursor=pointer]:
+                  - /url: https://b7517ec9-ee71-4f7e-aeb6-f95186398883.onlinestore.godaddy.com/admin/general_settings/edit?ua_placement=shared_header
+                  - generic [ref=e82]: Settings
+          - listitem [ref=e83]:
+            - button "Appointments" [ref=e84] [cursor=pointer]:
+              - generic [ref=e89]: Appointments
+            - list:
+              - listitem [ref=e92]:
+                - link "Overview" [ref=e93] [cursor=pointer]:
+                  - /url: https://store.commerce.godaddy.com/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a/overview/ola?ua_placement=shared_header
+                  - generic [ref=e96]: Overview
+              - listitem [ref=e97]:
+                - link "Calendar" [ref=e98] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/bookings?ua_placement=shared_header
+                  - generic [ref=e101]: Calendar
+              - listitem [ref=e102]:
+                - link "Services" [ref=e103] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/services?ua_placement=shared_header
+                  - generic [ref=e106]: Services
+              - listitem [ref=e107]:
+                - link "Categories" [ref=e108] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/categories?ua_placement=shared_header
+                  - generic [ref=e111]: Categories
+              - listitem [ref=e112]:
+                - link "Customers" [ref=e113] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/clients?ua_placement=shared_header
+                  - generic [ref=e116]: Customers
+              - listitem [ref=e117]:
+                - link "Coupons NEW" [ref=e118] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/coupons?ua_placement=shared_header
+                  - generic [ref=e120]:
+                    - generic [ref=e121]: Coupons
+                    - generic [ref=e122]: NEW
+              - listitem [ref=e123]:
+                - link "Staff" [ref=e124] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/resources?ua_placement=shared_header
+                  - generic [ref=e127]: Staff
+              - listitem [ref=e128]:
+                - link "Add-ons" [ref=e129] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/addons?ua_placement=shared_header
+                  - generic [ref=e132]: Add-ons
+              - listitem [ref=e133]:
+                - link "Settings" [ref=e134] [cursor=pointer]:
+                  - /url: https://ola.godaddy.com/b7517ec9-ee71-4f7e-aeb6-f95186398883/settings/business?ua_placement=shared_header
+                  - generic [ref=e137]: Settings
+          - listitem [ref=e138]:
+            - link "Marketing" [ref=e139] [cursor=pointer]:
+              - /url: https://marketing.godaddy.com/venture/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a?ua_placement=shared_header
+              - generic [ref=e144]: Marketing
+            - button "Marketing" [ref=e145]
+            - list:
+              - listitem [ref=e147]:
+                - link "Overview" [ref=e148] [cursor=pointer]:
+                  - /url: https://marketing.godaddy.com/venture/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a?ua_placement=shared_header
+                  - generic [ref=e151]: Overview
+              - listitem [ref=e152]:
+                - link "Social" [ref=e153] [cursor=pointer]:
+                  - /url: https://social.home.godaddy.com/account/6b9c5676-0314-4c9f-8e80-6074ae07fda6?ua_placement=shared_header
+                  - generic [ref=e156]: Social
+              - listitem [ref=e157]:
+                - link "SEO" [ref=e158] [cursor=pointer]:
+                  - /url: https://searchenginevisibility.godaddy.com/externalappstart?account_uid=6b9c5676-0314-4c9f-8e80-6074ae07fda6&marketid=en-IN&appLink=VNEXT&ua_placement=shared_header
+                  - generic [ref=e161]: SEO
+              - listitem [ref=e162]:
+                - link "AI Visibility" [ref=e163] [cursor=pointer]:
+                  - /url: https://aivisibility.godaddy.com/venture/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a?ua_placement=shared_header
+                  - generic [ref=e166]: AI Visibility
+              - listitem [ref=e167]:
+                - link "Calendar" [ref=e168] [cursor=pointer]:
+                  - /url: https://marketing.godaddy.com/venture/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a/social?ua_placement=shared_header
+                  - generic [ref=e171]: Calendar
+              - listitem [ref=e172]:
+                - link "Email Marketing" [ref=e173] [cursor=pointer]:
+                  - /url: https://email.marketing.godaddy.com/venture/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a?ua_placement=shared_header
+                  - generic [ref=e176]: Email Marketing
+              - listitem [ref=e177]:
+                - link "Blog" [ref=e178] [cursor=pointer]:
+                  - /url: https://blogging.godaddy.com/website/b7517ec9-ee71-4f7e-aeb6-f95186398883?ua_placement=shared_header
+                  - generic [ref=e181]: Blog
+              - listitem [ref=e182]:
+                - link "Content Creator" [ref=e183] [cursor=pointer]:
+                  - /url: https://content-creator.godaddy.com?website=b7517ec9-ee71-4f7e-aeb6-f95186398883&ua_placement=shared_header
+                  - generic [ref=e186]: Content Creator
+              - listitem [ref=e187]:
+                - link "Coupons" [ref=e188] [cursor=pointer]:
+                  - /url: https://b7517ec9-ee71-4f7e-aeb6-f95186398883.onlinestore.godaddy.com/admin/promotions?ua_placement=shared_header
+                  - generic [ref=e191]: Coupons
+          - listitem [ref=e192]:
+            - button "Conversations" [ref=e193] [cursor=pointer]:
+              - generic [ref=e197]:
+                - generic [ref=e198]: Conversations
+                - generic [ref=e199]: "1"
+            - list:
+              - listitem [ref=e202]:
+                - link "Overview" [ref=e203] [cursor=pointer]:
+                  - /url: https://conversations.godaddy.com/overview/b7517ec9-ee71-4f7e-aeb6-f95186398883?ua_placement=shared_header&ref=nav
+                  - generic [ref=e206]: Overview
+              - listitem [ref=e207]:
+                - link "Inbox" [ref=e208] [cursor=pointer]:
+                  - /url: https://conversations.godaddy.com/conversations/b7517ec9-ee71-4f7e-aeb6-f95186398883?ua_placement=shared_header&ref=nav
+                  - generic [ref=e211]: Inbox
+              - listitem [ref=e212]:
+                - link "Content" [ref=e213] [cursor=pointer]:
+                  - /url: https://conversations.godaddy.com/content/b7517ec9-ee71-4f7e-aeb6-f95186398883?ua_placement=shared_header&ref=nav
+                  - generic [ref=e216]: Content
+              - listitem [ref=e217]:
+                - link "Settings" [ref=e218] [cursor=pointer]:
+                  - /url: https://conversations.godaddy.com/settings/b7517ec9-ee71-4f7e-aeb6-f95186398883?ua_placement=shared_header&ref=nav
+                  - generic [ref=e221]: Settings
+          - listitem [ref=e222]:
+            - button "Customers" [ref=e223] [cursor=pointer]:
+              - generic [ref=e228]: Customers
+            - list:
+              - listitem [ref=e231]:
+                - link "All" [ref=e232] [cursor=pointer]:
+                  - /url: https://contacts.godaddy.com/venture/cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a?ua_placement=shared_header
+                  - generic [ref=e235]: All
+              - listitem [ref=e236]:
+                - link "Automations" [ref=e237] [cursor=pointer]:
+                  - /url: https://automations.godaddy.com/website/b7517ec9-ee71-4f7e-aeb6-f95186398883?ua_placement=shared_header
+                  - generic [ref=e240]: Automations
+              - listitem [ref=e241]:
+                - link "Signup Forms" [ref=e242] [cursor=pointer]:
+                  - /url: https://gem.godaddy.com/logins/website/b7517ec9-ee71-4f7e-aeb6-f95186398883?marketid=en-IN&path=/signups&ua_placement=shared_header
+                  - generic [ref=e245]: Signup Forms
+              - listitem [ref=e246]:
+                - link "Settings" [ref=e247] [cursor=pointer]:
+                  - /url: https://contacts.godaddy.com/website/b7517ec9-ee71-4f7e-aeb6-f95186398883/settings?ua_placement=shared_header
+                  - generic [ref=e250]: Settings
+          - listitem [ref=e251]:
+            - link "Users" [ref=e252] [cursor=pointer]:
+              - /url: https://dashboard.godaddy.com/venture/users?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&ua_placement=shared_header
+              - generic [ref=e257]: Users
+          - listitem [ref=e258]:
+            - link "Deals" [ref=e259] [cursor=pointer]:
+              - /url: https://dashboard.godaddy.com/venture/deals?ventureId=cb8858ae-dcd1-4e0e-9d8f-5f0161fac57a&ua_placement=shared_header
+              - generic [ref=e264]: Deals
+      - generic [ref=e265]:
+        - generic [ref=e268] [cursor=pointer]:
+          - img [ref=e269]
+          - generic [ref=e270]: Ask Me Anything
+        - link "Help Center" [ref=e272] [cursor=pointer]:
+          - /url: https://www.godaddy.com/help
+          - generic [ref=e273]: Help Center
+        - button "App Switcher" [ref=e275] [cursor=pointer]
+        - button "Customer Info" [ref=e277] [cursor=pointer]:
+          - generic [ref=e278]: SS
+  - main [ref=e281]:
+    - generic [ref=e286]:
+      - heading "Website" [level=1] [ref=e289]
+      - generic [ref=e292]:
+        - textbox [disabled] [ref=e303]: https://bunbay.co.in
+        - generic [ref=e374]:
+          - paragraph [ref=e376]: Generated with GoDaddy Airo®™
+          - heading "Ready for a full site?" [level=2] [ref=e377]
+          - paragraph [ref=e378]: You have a Coming Soon page. Now, establish your business online by replacing it with a full site generated for you with AI.
+          - button "Preview Site" [ref=e379] [cursor=pointer]:
+            - generic: Preview Site
+  - generic:
+    - contentinfo
+  - alert [ref=e381]
