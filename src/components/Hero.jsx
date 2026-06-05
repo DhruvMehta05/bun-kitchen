@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImg from '../assets/hero_mascot.png';
 
 const Hero = () => {
   return (
@@ -16,7 +15,7 @@ const Hero = () => {
           <div className="hero-badge">
             100%<br/>Fresh
           </div>
-          <img src={heroImg} alt="BunBay Mascot eating a burger" className="img-fluid" />
+          <div className="mascot-animator" aria-label="BunBay Mascot eating a burger animation"></div>
         </div>
       </div>
     </section>
