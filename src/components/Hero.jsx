@@ -1,18 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import mascotHold from '../assets/mascot_hold.png';
-import mascotBite from '../assets/mascot_bite.png';
-import mascotChew from '../assets/mascot_chew.png';
-import mascotGulp from '../assets/mascot_gulp.png';
-import mascotLick from '../assets/mascot_lick.png';
-import mascotBurp from '../assets/mascot_burp.png';
+import mascotAnim1 from '../assets/mascot_anim_1.png';
+import mascotAnim2 from '../assets/mascot_anim_2.png';
+import mascotAnim3 from '../assets/mascot_anim_3.png';
 
 const frames = [
-  { src: mascotHold, duration: 1800, alt: "BunBay Mascot holding a burger" },
-  { src: mascotBite, duration: 400, alt: "BunBay Mascot taking a bite of the burger" },
-  { src: mascotChew, duration: 1400, alt: "BunBay Mascot chewing the burger" },
-  { src: mascotGulp, duration: 500, alt: "BunBay Mascot gulping it down" },
-  { src: mascotLick, duration: 1200, alt: "BunBay Mascot savoring the taste" },
-  { src: mascotBurp, duration: 1800, alt: "BunBay Mascot burping happily after eating" }
+  { src: mascotAnim1, duration: 1800, alt: "BunBay Mascot holding a cheeseburger" },
+  { src: mascotAnim2, duration: 600, alt: "BunBay Mascot biting the cheeseburger" },
+  { src: mascotAnim3, duration: 1800, alt: "BunBay Mascot chewing and enjoying the cheeseburger" }
 ];
 
 const Hero = () => {
