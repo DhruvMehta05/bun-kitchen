@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import makhanImg from '../assets/hero_actual.jpg';
 import snapImg from '../assets/burger_actual2.jpg';
 import cheeseRushImg from '../assets/burger_actual3.jpg';
@@ -6,6 +6,7 @@ import judwaImg from '../assets/double_crunch_new.jpg';
 import menuFullImg from '../assets/menu_full.png';
 
 const MenuHighlights = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuItems = [
     {
       id: 1,
@@ -62,12 +63,30 @@ const MenuHighlights = () => {
 
         <div id="menu" className="menu-poster">
           <h2 className="section-title">Menu</h2>
-          <img
-            src={menuFullImg}
-            alt="BUNBAY full menu — burgers, fries, drinks, combos, meals, and party packs"
-            className="menu-poster-img"
-          />
+          <div className="menu-poster-wrapper" onClick={() => setIsMenuOpen(true)}>
+            <img
+              src={menuFullImg}
+              alt="BUNBAY full menu — burgers, fries, drinks, combos, meals, and party packs"
+              className="menu-poster-img"
+            />
+            <div className="menu-zoom-hint">
+              <span>🔍 Tap to Zoom Menu</span>
+            </div>
+          </div>
         </div>
+
+        {isMenuOpen && (
+          <div className="menu-lightbox" onClick={() => setIsMenuOpen(false)}>
+            <div className="menu-lightbox-content" onClick={(e) => e.stopPropagation()}>
+              <button className="lightbox-close-btn" onClick={() => setIsMenuOpen(false)}>&times;</button>
+              <img
+                src={menuFullImg}
+                alt="BUNBAY full menu zoomed"
+                className="menu-lightbox-img"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

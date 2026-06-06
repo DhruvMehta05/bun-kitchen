@@ -346,13 +346,130 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
+.menu-poster-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: zoom-in;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-subtle);
+  transition: transform 0.3s ease;
+}
+
+.menu-poster-wrapper:hover {
+  transform: scale(1.01);
+}
+
 .menu-poster-img {
   width: 100%;
   max-width: 900px;
   height: auto;
-  border-radius: var(--border-radius-lg);
-  box-shadow: var(--shadow-lg);
-  border: 1px solid var(--border-subtle);
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.menu-poster-wrapper:hover .menu-poster-img {
+  opacity: 0.85;
+}
+
+.menu-zoom-hint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.menu-poster-wrapper:hover .menu-zoom-hint {
+  opacity: 1;
+}
+
+/* Menu Lightbox (Modal) */
+.menu-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  cursor: zoom-out;
+}
+
+.menu-lightbox-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.menu-lightbox-img {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--border-radius-md);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  animation: zoom-in-lightbox 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 3rem;
+  font-weight: 300;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.lightbox-close-btn:hover {
+  color: var(--secondary);
+  transform: rotate(90deg);
+}
+
+@keyframes zoom-in-lightbox {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-lightbox {
+    padding: 15px;
+  }
+  
+  .lightbox-close-btn {
+    top: -40px;
+    font-size: 2.5rem;
+  }
 }
 
 /* Footer Section */
