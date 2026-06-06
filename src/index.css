@@ -223,25 +223,25 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.mascot-animator {
+.mascot-frame-wrapper {
   width: 100%;
-  max-width: 450px;
-  aspect-ratio: 1 / 1;
+  max-width: 420px;
+  aspect-ratio: 332 / 372;
   margin: 0 auto;
-  background-image: url('./assets/bunbay_mascot.jpg');
-  background-size: 200% 200%;
-  background-repeat: no-repeat;
   border-radius: var(--border-radius-lg);
-  border: 1px solid var(--border-subtle);
-  animation: float 6s ease-in-out infinite, playMascot 8s step-end infinite;
+  border: 4px solid var(--border-subtle);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  animation: float 6s ease-in-out infinite;
   filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.6));
+  background-color: #b2e3f8; /* fallback sky blue matching the frames background */
 }
 
-@keyframes playMascot {
-  0%, 100% { background-position: 0% 0%; }     /* Hungry */
-  25% { background-position: 100% 0%; }         /* Bite */
-  50% { background-position: 0% 100%; }         /* Savor */
-  75% { background-position: 100% 100%; }       /* Burp */
+.mascot-frame-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hero-badge {
