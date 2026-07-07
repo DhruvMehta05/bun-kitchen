@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { menuItems } from '../data/menuData';
-import menuFullImg from '../assets/menu_full.png';
+import menuFullImg from '../assets/menu_full.jpg';
 
 const MenuHighlights = () => {
   const [activeCategory, setActiveCategory] = useState('all');
