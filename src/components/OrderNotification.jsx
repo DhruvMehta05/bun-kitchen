@@ -1,10 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const OrderNotification = () => {
-  const [isVisible, setIsVisible] = useState(true);
-
-  if (!isVisible) return null;
-
+const OrderNotification = ({ onClose }) => {
   return (
     <div className="order-notification-bar" id="large-order-notification">
       <div className="container notification-container">
@@ -16,7 +12,7 @@ const OrderNotification = () => {
         </div>
         <button 
           className="notification-close-btn" 
-          onClick={() => setIsVisible(false)}
+          onClick={onClose}
           aria-label="Close notification"
         >
           &times;

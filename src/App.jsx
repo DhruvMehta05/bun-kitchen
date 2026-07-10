@@ -9,6 +9,7 @@ import CartDrawer from './components/CartDrawer';
 
 function App() {
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isNoteVisible, setIsNoteVisible] = useState(true);
 
   return (
     <CartProvider>
@@ -18,7 +19,9 @@ function App() {
         <MenuHighlights />
       </main>
       <Footer />
-      <OrderNotification />
+      {!isCartOpen && isNoteVisible && (
+        <OrderNotification onClose={() => setIsNoteVisible(false)} />
+      )}
       <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
     </CartProvider>
   );
