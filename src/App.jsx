@@ -1,21 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import MenuHighlights from './components/MenuHighlights';
 import Footer from './components/Footer';
 import OrderNotification from './components/OrderNotification';
+import { CartProvider } from './context/CartContext';
+import CartDrawer from './components/CartDrawer';
 
 function App() {
+  const [isCartOpen, setIsCartOpen] = useState(false);
+
   return (
-    <>
-      <Navbar />
+    <CartProvider>
+      <Navbar onCartClick={() => setIsCartOpen(true)} />
       <main>
         <Hero />
         <MenuHighlights />
       </main>
       <Footer />
       <OrderNotification />
-    </>
+      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
+    </CartProvider>
   );
 }
 

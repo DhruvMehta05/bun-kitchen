@@ -1,0 +1,135 @@
+import React, { useState } from 'react';
+import { useCart } from '../context/CartContext';
+
+const CartDrawer = ({ isOpen, onClose }) => {
+  const { cart, updateQuantity, removeFromCart, cartTotal, cartCount } = useCart();
+  const [instructions, setInstructions] = useState('');
+
+  if (!isOpen) return null;
+
+  // Generate the formatted WhatsApp message
+  const handleCheckout = () => {
+    if (cart.length === 0) return;
+
+    let message = `Hi BUNBAY! 🍔 I would like to place an order:\n\n`;
+    message += `🛍️ *Order Details:*\n`;
+    
+    cart.forEach((item) => {
+      const itemTotal = item.price * item.quantity;
+      message += `• *${item.quantity}x* ${item.name} (₹${item.price} each) = *₹${itemTotal}*\n`;
+    });
+
+    message += `\n💰 *Total Amount:* *₹${cartTotal}*`;
+
+    if (instructions.trim() !== '') {
+      message += `\n\n📝 *Special Instructions:*\n${instructions.trim()}`;
+    }
+
+    message += `\n\nConfirming my order. Please let me know the status and next steps!`;
+
+    const whatsappUrl = `https://wa.me/919653215863?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  return (
+    <div className="cart-overlay" onClick={onClose}>
+      <div className="cart-drawer" onClick={(e) => e.stopPropagation()}>
+        <div className="cart-header">
+          <h2>Your Cart ({cartCount})</h2>
+          <button className="cart-close-btn" onClick={onClose} aria-label="Close cart">
+            &times;
+          </button>
+        </div>
+
+        <div className="cart-body">
+          {cart.length === 0 ? (
+            <div className="cart-empty-state">
+              <span className="empty-cart-icon">🛒</span>
+              <h3>Your cart is empty</h3>
+              <p>Add some delicious bites from our menu to get started!</p>
+              <button className="btn btn-primary" onClick={onClose}>
+                Browse Menu
+              </button>
+            </div>
+          ) : (
+            <>
+              <div className="cart-items-list">
+                {cart.map((item) => (
+                  <div key={item.id} className="cart-item">
+                    <img src={item.image} alt={item.name} className="cart-item-image" />
+                    <div className="cart-item-details">
+                      <h4>{item.name}</h4>
+                      <p className="cart-item-price">₹{item.price} each</p>
+                      
+                      <div className="cart-item-actions">
+                        <div className="quantity-controller">
+                          <button 
+                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                            className="qty-btn"
+                            aria-label="Decrease quantity"
+                          >
+                            &minus;
+                          </button>
+                          <span className="qty-val">{item.quantity}</span>
+                          <button 
+                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                            className="qty-btn"
+                            aria-label="Increase quantity"
+                          >
+                            &#43;
+                          </button>
+                        </div>
+                        
+                        <button 
+                          className="cart-item-delete"
+                          onClick={() => removeFromCart(item.id)}
+                          aria-label="Remove item"
+                        >
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash3" viewBox="0 0 16 16">
+                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <div className="cart-item-total-price">
+                      ₹{item.price * item.quantity}
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="cart-instructions">
+                <label htmlFor="cart-instructions-input">Special Instructions</label>
+                <textarea
+                  id="cart-instructions-input"
+                  placeholder="E.g., Make it extra spicy, no onions, delivery details..."
+                  value={instructions}
+                  onChange={(e) => setInstructions(e.target.value)}
+                  rows={2}
+                />
+              </div>
+            </>
+          )}
+        </div>
+
+        {cart.length > 0 && (
+          <div className="cart-footer">
+            <div className="cart-summary-row">
+              <span>Items Total:</span>
+              <span>₹{cartTotal}</span>
+            </div>
+            <p className="cart-tax-note">Taxes and delivery charges calculated on confirmation.</p>
+            <button className="btn-checkout-whatsapp" onClick={handleCheckout}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+              </svg>
+              Send Order via WhatsApp
+            </button>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default CartDrawer;
