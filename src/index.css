@@ -1419,3 +1419,123 @@ body {
   }
 }
 
+/* Clear Cart Confirmation Modal & Header actions */
+.cart-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cart-clear-all-btn {
+  background: transparent;
+  color: var(--secondary);
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 20px;
+  transition: all var(--transition-speed) ease;
+}
+
+.cart-clear-all-btn:hover {
+  background: rgba(229, 30, 37, 0.1);
+  color: var(--secondary-hover);
+}
+
+.clear-confirm-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  z-index: 1600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fade-in 0.25s ease;
+}
+
+.clear-confirm-modal {
+  background: var(--surface-color);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--border-radius-md);
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  animation: zoom-in-lightbox 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.clear-confirm-modal h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.clear-confirm-modal p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.clear-confirm-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.btn-confirm-cancel {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+.btn-confirm-cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.btn-confirm-clear {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+  box-shadow: 0 4px 10px rgba(229, 30, 37, 0.25);
+}
+
+.btn-confirm-clear:hover {
+  background: var(--secondary-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 15px rgba(229, 30, 37, 0.45);
+}
+
+.cart-instructions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+

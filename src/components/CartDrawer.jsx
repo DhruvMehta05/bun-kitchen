@@ -1,9 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCart } from '../context/CartContext';
 
 const CartDrawer = ({ isOpen, onClose }) => {
-  const { cart, updateQuantity, removeFromCart, cartTotal, cartCount } = useCart();
+  const { cart, updateQuantity, removeFromCart, cartTotal, cartCount, clearCart } = useCart();
   const [instructions, setInstructions] = useState('');
+  const [showConfirmClear, setShowConfirmClear] = useState(false);
+
+  // Clear instructions when the cart is emptied
+  useEffect(() => {
+    if (cart.length === 0) {
+      setInstructions('');
+    }
+  }, [cart.length]);
 
   if (!isOpen) return null;
 
@@ -31,14 +39,34 @@ const CartDrawer = ({ isOpen, onClose }) => {
     window.open(whatsappUrl, '_blank');
   };
 
+  const handleInstructionsChange = (e) => {
+    const val = e.target.value;
+    // Strip dangerous HTML/script characters to prevent code injection
+    const sanitized = val.replace(/[<>`\\{}[\]]/g, '');
+    if (sanitized.length <= 200) {
+      setInstructions(sanitized);
+    }
+  };
+
   return (
-    <div className="cart-overlay" onClick={onClose}>
+    <>
+      <div className="cart-overlay" onClick={onClose}>
       <div className="cart-drawer" onClick={(e) => e.stopPropagation()}>
         <div className="cart-header">
           <h2>Your Cart ({cartCount})</h2>
-          <button className="cart-close-btn" onClick={onClose} aria-label="Close cart">
-            &times;
-          </button>
+          <div className="cart-header-actions">
+            {cart.length > 0 && (
+              <button 
+                className="cart-clear-all-btn"
+                onClick={() => setShowConfirmClear(true)}
+              >
+                Clear All
+              </button>
+            )}
+            <button className="cart-close-btn" onClick={onClose} aria-label="Close cart">
+              &times;
+            </button>
+          </div>
         </div>
 
         <div className="cart-body">
@@ -47,8 +75,18 @@ const CartDrawer = ({ isOpen, onClose }) => {
               <span className="empty-cart-icon">🛒</span>
               <h3>Your cart is empty</h3>
               <p>Add some delicious bites from our menu to get started!</p>
-              <button className="btn btn-primary" onClick={onClose}>
-                Browse Menu
+              <button 
+                className="btn btn-primary" 
+                onClick={() => {
+                  onClose();
+                  window.location.hash = 'menu';
+                  const menuSection = document.getElementById('menu');
+                  if (menuSection) {
+                    menuSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                Explore Menu
               </button>
             </div>
           ) : (
@@ -99,13 +137,17 @@ const CartDrawer = ({ isOpen, onClose }) => {
               </div>
 
               <div className="cart-instructions">
-                <label htmlFor="cart-instructions-input">Special Instructions</label>
+                <div className="cart-instructions-header">
+                  <label htmlFor="cart-instructions-input">Special Instructions</label>
+                  <span className="char-count">{instructions.length}/200</span>
+                </div>
                 <textarea
                   id="cart-instructions-input"
                   placeholder="E.g., Make it extra spicy, no onions, delivery details..."
                   value={instructions}
-                  onChange={(e) => setInstructions(e.target.value)}
+                  onChange={handleInstructionsChange}
                   rows={2}
+                  maxLength={200}
                 />
               </div>
             </>
@@ -129,6 +171,33 @@ const CartDrawer = ({ isOpen, onClose }) => {
         )}
       </div>
     </div>
+
+    {showConfirmClear && (
+      <div className="clear-confirm-overlay" onClick={() => setShowConfirmClear(false)}>
+        <div className="clear-confirm-modal" onClick={(e) => e.stopPropagation()}>
+          <h3>Empty your cart?</h3>
+          <p>This will remove all items from your cart. You cannot undo this action.</p>
+          <div className="clear-confirm-buttons">
+            <button 
+              className="btn-confirm-cancel" 
+              onClick={() => setShowConfirmClear(false)}
+            >
+              Cancel
+            </button>
+            <button 
+              className="btn-confirm-clear" 
+              onClick={() => {
+                clearCart();
+                setShowConfirmClear(false);
+              }}
+            >
+              Yes, Clear All
+            </button>
+          </div>
+        </div>
+      </div>
+    )}
+    </>
   );
 };
 
