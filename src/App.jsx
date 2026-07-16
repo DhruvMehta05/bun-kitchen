@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Promotions from './components/Promotions';
 import MenuHighlights from './components/MenuHighlights';
 import Footer from './components/Footer';
 import OrderNotification from './components/OrderNotification';
@@ -16,6 +17,7 @@ function App() {
       <Navbar onCartClick={() => setIsCartOpen(true)} />
       <main>
         <Hero />
+        <Promotions />
         <MenuHighlights />
       </main>
       <Footer />

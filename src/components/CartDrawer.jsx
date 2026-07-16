@@ -19,23 +19,37 @@ const CartDrawer = ({ isOpen, onClose }) => {
   const handleCheckout = () => {
     if (cart.length === 0) return;
 
-    let message = `Hi BUNBAY! 🍔 I would like to place an order:\n\n`;
-    message += `🛍️ *Order Details:*\n`;
+    let message = `Hi BUNBAY! \uD83C\uDF54 I would like to place an order:\n\n`;
+    message += `\uD83D\uDED2 *Order Details:*\n`;
     
     cart.forEach((item) => {
-      const itemTotal = item.price * item.quantity;
-      message += `• *${item.quantity}x* ${item.name} (₹${item.price} each) = *₹${itemTotal}*\n`;
+      let itemTotal;
+      let priceDetails = '';
+      if (item.offerPrice && item.limitQty) {
+        const promoQty = Math.min(item.quantity, item.limitQty);
+        const regularQty = Math.max(0, item.quantity - item.limitQty);
+        itemTotal = (promoQty * item.offerPrice) + (regularQty * item.price);
+        if (regularQty > 0) {
+          priceDetails = ` (${promoQty}x @ \u20B9${item.offerPrice} + ${regularQty}x @ \u20B9${item.price})`;
+        } else {
+          priceDetails = ` (\u20B9${item.offerPrice} each)`;
+        }
+      } else {
+        itemTotal = item.price * item.quantity;
+        priceDetails = ` (\u20B9${item.price} each)`;
+      }
+      message += `\u2022 *${item.quantity}x* ${item.name}${priceDetails} = *\u20B9${itemTotal}*\n`;
     });
 
-    message += `\n💰 *Total Amount:* *₹${cartTotal}*`;
+    message += `\n\uD83D\uDCB0 *Total Amount:* *\u20B9${cartTotal}*`;
 
     if (instructions.trim() !== '') {
-      message += `\n\n📝 *Special Instructions:*\n${instructions.trim()}`;
+      message += `\n\n\uD83D\uDCAC *Special Instructions:*\n${instructions.trim()}`;
     }
 
-    message += `\n\nConfirming my order. Please let me know the status and next steps!`;
+    message += `\n\nConfirming my order. Please let me know the status and next steps! \uD83C\uDF54`;
 
-    const whatsappUrl = `https://wa.me/919653215863?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=919653215863&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -92,48 +106,71 @@ const CartDrawer = ({ isOpen, onClose }) => {
           ) : (
             <>
               <div className="cart-items-list">
-                {cart.map((item) => (
-                  <div key={item.id} className="cart-item">
-                    <img src={item.image} alt={item.name} className="cart-item-image" />
-                    <div className="cart-item-details">
-                      <h4>{item.name}</h4>
-                      <p className="cart-item-price">₹{item.price} each</p>
-                      
-                      <div className="cart-item-actions">
-                        <div className="quantity-controller">
-                          <button 
-                            onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                            className="qty-btn"
-                            aria-label="Decrease quantity"
-                          >
-                            &minus;
-                          </button>
-                          <span className="qty-val">{item.quantity}</span>
-                          <button 
-                            onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                            className="qty-btn"
-                            aria-label="Increase quantity"
-                          >
-                            &#43;
-                          </button>
+                {cart.map((item) => {
+                  const isPromo = item.offerPrice && item.limitQty;
+                  const promoQty = isPromo ? Math.min(item.quantity, item.limitQty) : 0;
+                  const regularQty = isPromo ? Math.max(0, item.quantity - item.limitQty) : 0;
+                  const itemTotal = isPromo 
+                    ? (promoQty * item.offerPrice) + (regularQty * item.price)
+                    : item.price * item.quantity;
+
+                  return (
+                    <div key={item.id} className="cart-item">
+                      <img src={item.image} alt={item.name} className="cart-item-image" />
+                      <div className="cart-item-details">
+                        <h4>{item.name}</h4>
+                        <div className="cart-item-price-block">
+                          {isPromo ? (
+                            <>
+                              <p className="cart-item-price promo-applied">
+                                <span className="current-price">₹{item.offerPrice}</span>
+                                <span className="original-price">₹{item.price}</span>
+                              </p>
+                              {item.quantity > item.limitQty && (
+                                <p className="cart-item-breakdown">{promoQty}x @ ₹{item.offerPrice} + {regularQty}x @ ₹{item.price}</p>
+                              )}
+                            </>
+                          ) : (
+                            <p className="cart-item-price">₹{item.price} each</p>
+                          )}
                         </div>
                         
-                        <button 
-                          className="cart-item-delete"
-                          onClick={() => removeFromCart(item.id)}
-                          aria-label="Remove item"
-                        >
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash3" viewBox="0 0 16 16">
-                            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
-                          </svg>
-                        </button>
+                        <div className="cart-item-actions">
+                          <div className="quantity-controller">
+                            <button 
+                              onClick={() => updateQuantity(item.id, item.quantity - 1)}
+                              className="qty-btn"
+                              aria-label="Decrease quantity"
+                            >
+                              &minus;
+                            </button>
+                            <span className="qty-val">{item.quantity}</span>
+                            <button 
+                              onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                              className="qty-btn"
+                              aria-label="Increase quantity"
+                            >
+                              &#43;
+                            </button>
+                          </div>
+                          
+                          <button 
+                            className="cart-item-delete"
+                            onClick={() => removeFromCart(item.id)}
+                            aria-label="Remove item"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-trash3" viewBox="0 0 16 16">
+                              <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div className="cart-item-total-price">
+                        ₹{itemTotal}
                       </div>
                     </div>
-                    <div className="cart-item-total-price">
-                      ₹{item.price * item.quantity}
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <div className="cart-instructions">

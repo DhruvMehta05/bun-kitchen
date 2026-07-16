@@ -17,6 +17,7 @@ const Navbar = ({ onCartClick }) => {
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#menu">Menu</a></li>
+            <li><a href="https://www.google.com/search?sca_esv=350cd25fdf1e2243&sxsrf=APpeQnsKyzNouueBen4K63Xwm2U276OxPg:1784222554913&si=APenkKm7iecQ4G6P-TsbSMFKIQtv3EFIqRAFw-i8uEbk55Z-_1Z5hbhdzrG5Io_bgNSRytmJtoIgkID4B4Yv0pNV2EqL-uh5YTRtDf00kiIKS3mlT2zSAwWNpHy0E_P6GFGQAvVCuxHxCqQrVHqWce0LKOKQn7inCA%3D%3D&q=BunBay+-+Tasty+Burger+in+Mumbai+Reviews&sa=X&ved=2ahUKEwiuuNf82teVAxVZUPUHHdePI8UQ0bkNegQIMhAH&biw=1382&bih=770&dpr=2.5" target="_blank" rel="noopener noreferrer">Reviews</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           

@@ -111,7 +111,14 @@ const MenuHighlights = () => {
                   <h3>{item.name}</h3>
                   <p>{item.description}</p>
                   <div className="menu-card-footer">
-                    <span className="price">₹{item.price}</span>
+                    {item.offerPrice ? (
+                      <span className="price promo-price">
+                        <span className="current-price">₹{item.offerPrice}</span>
+                        <span className="original-price-slashed">₹{item.price}</span>
+                      </span>
+                    ) : (
+                      <span className="price">₹{item.price}</span>
+                    )}
                     {(() => {
                       const cartItem = cart.find(i => i.id === item.id);
                       if (cartItem) {
@@ -207,7 +214,14 @@ const MenuHighlights = () => {
               />
               <div className="lightbox-caption">
                 <h3>{activeLightboxImg.name}</h3>
-                <p className="price">₹{activeLightboxImg.price}</p>
+                {activeLightboxImg.offerPrice ? (
+                  <p className="price promo-price">
+                    <span className="current-price">₹{activeLightboxImg.offerPrice}</span>
+                    <span className="original-price-slashed">₹{activeLightboxImg.price}</span>
+                  </p>
+                ) : (
+                  <p className="price">₹{activeLightboxImg.price}</p>
+                )}
                 <p className="description">{activeLightboxImg.description}</p>
               </div>
             </div>

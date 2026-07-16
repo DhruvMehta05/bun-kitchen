@@ -24,6 +24,7 @@ import snapSizzleImg from '../assets/menu/Snap & Sizzle.jpg';
 import spicyZestyTwinPackImg from '../assets/menu/Spicy & Zesty Twin Pack.jpg';
 import veggieCrunchDelightImg from '../assets/menu/Veggie Crunch Delight.jpg';
 import zingZingMealImg from '../assets/menu/Zing Zing Meal.jpg';
+import doubleDelightComboImg from '../assets/menu/Double Delight (Combo).png';
 
 export const menuItems = [
   // --- Burgers ---
@@ -191,6 +192,8 @@ export const menuItems = [
     name: "Cheese & Fire Box",
     category: "combos",
     price: 219,
+    offerPrice: 189,
+    limitQty: 2,
     image: cheeseFireBoxImg,
     description: "Cheese Rush Burger + Peri Peri Paneer Blaze Burger combo—spicy, cheesy, and satisfying.",
     tags: ["Spicy", "Cheesy", "Veg"]
@@ -250,5 +253,16 @@ export const menuItems = [
     image: alooMastiMeal2Img,
     description: "Chatakedar Aloo Tikki Burger + Classic Fries + Mint Mojito.",
     tags: ["Value Deal", "Veg"]
+  },
+  {
+    id: 25,
+    name: "Double Delight",
+    category: "combos",
+    price: 119,
+    offerPrice: 79,
+    limitQty: 2,
+    image: doubleDelightComboImg,
+    description: "Chatakedar Aloo Tikki Burger + Veggie Crunch Delight combo—double the goodness at an unbeatable price.",
+    tags: ["New", "Combo", "Veg"]
   }
 ];

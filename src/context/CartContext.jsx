@@ -60,7 +60,14 @@ export const CartProvider = ({ children }) => {
   const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   // Derived state: Total price
-  const cartTotal = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  const cartTotal = cart.reduce((total, item) => {
+    if (item.offerPrice && item.limitQty) {
+      const promoQty = Math.min(item.quantity, item.limitQty);
+      const regularQty = Math.max(0, item.quantity - item.limitQty);
+      return total + (promoQty * item.offerPrice) + (regularQty * item.price);
+    }
+    return total + item.price * item.quantity;
+  }, 0);
 
   return (
     <CartContext.Provider
