@@ -101,6 +101,10 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(1px);
 }
 
+.btn-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
 .btn-outline {
   background: transparent;
   color: var(--secondary);
@@ -217,6 +221,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.2rem;
   margin-bottom: 40px;
   color: var(--text-muted);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .hero-image {
@@ -607,6 +617,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #home,
+#offers,
 #menu,
 #contact {
   scroll-margin-top: 85px; /* Adjusted scroll margin for slimmer navbar */
@@ -875,6 +886,10 @@ h1, h2, h3, h4, h5, h6 {
   .hero-badge {
     right: 10%;
   }
+
+  .hero-buttons {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -888,6 +903,19 @@ h1, h2, h3, h4, h5, h6 {
   
   .section-title {
     font-size: 2.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
   }
 }
 

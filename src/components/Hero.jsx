@@ -29,8 +29,9 @@ const Hero = () => {
         <div className="hero-text">
           <h1>The Best <span className="highlight">Burgers</span><br/>In Town</h1>
           <p>Craving something juicy? Our premium handcrafted burgers are made with fresh ingredients and a whole lot of love. Explore our mouth-watering menu and discover your new favorite.</p>
-          <div style={{ display: 'flex', gap: '20px' }}>
-            <a href="#menu" className="btn btn-primary">Explore Menu</a>
+          <div className="hero-buttons">
+            <a href="#offers" className="btn btn-primary btn-pulse">Monsoon Offers 🌧️</a>
+            <a href="#menu" className="btn btn-outline">Explore Menu</a>
           </div>
         </div>
         <div className="hero-image">
